@@ -74,9 +74,8 @@ def build_paradigm(verb, paradigm):
     return entry
 
 
-
-with open("verbs.txt", "r", encoding="utf-8") as verbs_file, open("scn.crp.txt", "r", encoding="utf-8") as corpus:
-    with open("dictionary.txt", 'r', encoding="utf-8") as dictionary:
+with open("sicilian_verbs.txt", "r", encoding="utf-8") as verbs_file, open("scn.crp.txt", "r", encoding="utf-8") as corpus:
+    with open("dictionary.txt", 'r', encoding="utf-8") as dictionary, open("entries.txt", 'w') as entries_file:
         corpus = corpus.read()
         dictionary = dictionary.read()
         for verb in verbs_file:
@@ -136,3 +135,9 @@ with open("verbs.txt", "r", encoding="utf-8") as verbs_file, open("scn.crp.txt",
                     else:
                         raise ValueError("No such paradigm")
                 print(entry)
+                entries_file.write(entry + "\n")
+
+with open("entries_file.txt", 'r') as new_entries, open("dictionary.txt", 'a', encoding="utf-8") as dictionary:
+    dictionary.write("\n")
+    for new_entry in new_entries:
+        dictionary.write(new_entry.strip() + "\n")
