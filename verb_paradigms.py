@@ -80,7 +80,7 @@ with open("sicilian_verbs.txt", "r", encoding="utf-8") as verbs_file, open("scn.
         dictionary = dictionary.read()
         for verb in verbs_file:
             # check if verb is not in the sicilian dictionary:
-            if "lm=\"" + verb + "\"" not in dictionary:
+            if len(verb) > 2 and "lm=\"" + verb + "\"" not in dictionary:
                 verb = verb.strip()
                 if verb.endswith("si"):
                     verb = verb[:-2]
@@ -89,7 +89,7 @@ with open("sicilian_verbs.txt", "r", encoding="utf-8") as verbs_file, open("scn.
                     verb = verb.replace("à", "a")
                     verb = verb.replace("è", "e")
                     verb = verb.replace("ù", "u")
-                entry = "NO ENTRY"
+                entry = "NO ENTRY" + verb
 
                 # check if the verb is regular or not:
                 if not verb.endswith("iari") and replace_voc(verb):
@@ -123,7 +123,7 @@ with open("sicilian_verbs.txt", "r", encoding="utf-8") as verbs_file, open("scn.
                         elif verb.endswith("iri"):
                             entry = build_paradigm(verb, battiri)
                         else:
-                            raise ValueError("No such paradigm")
+                            print("NO PARADIMG", verb)
                 else:
                     if verb.endswith("ari"):
                         if verb.endswith("cari"):
@@ -133,7 +133,7 @@ with open("sicilian_verbs.txt", "r", encoding="utf-8") as verbs_file, open("scn.
                     elif verb.endswith("iri"):
                         entry = build_paradigm(verb, battiri)
                     else:
-                        raise ValueError("No such paradigm")
+                        print("NO PARADIMG", verb)
                 print(entry)
                 entries_file.write(entry + "\n")
 
