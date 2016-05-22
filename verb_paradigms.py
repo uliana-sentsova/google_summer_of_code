@@ -23,11 +23,11 @@ def find_root_voc(verb):
     root = verb[:-3]
     if is_cons(root[-1]):
         return root[-1]
-    elif is_cons(root[-2]):
+    elif len(root) >= 2 and is_cons(root[-2]):
         return(root[-2])
-    elif is_cons(root[-3]):
+    elif len(root) >= 3 and is_cons(root[-3]):
         return root[-3]
-    elif is_cons(root[-4]):
+    elif len(root) >= 4 and is_cons(root[-4]):
         return root[-4]
     else:
         return False
@@ -74,46 +74,65 @@ def build_paradigm(verb, paradigm):
     return entry
 
 
-with open("sicilian_verbs.txt", "r", encoding="utf-8") as verbs_file, open("scn.crp.txt", "r", encoding="utf-8") as corpus:
-    with open("dictionary.txt", 'r', encoding="utf-8") as dictionary, open("entries.txt", 'w') as entries_file:
+all_verbs = []
+with open("sicilian_verbs.txt", "r", encoding="utf-8") as verbs_file:
+    for line in verbs_file:
+        line = line.strip()
+        all_verbs.append(line)
+all_verbs = list(set(all_verbs))
+
+
+count = 0
+with open("scn.crp.txt", "r", encoding="utf-8") as corpus, open("dictionary.txt", 'r', encoding="utf-8") as dictionary, open("entries.txt", 'w') as entries_file:
         corpus = corpus.read()
         dictionary = dictionary.read()
-        for verb in verbs_file:
+        for verb in all_verbs:
             # check if verb is not in the sicilian dictionary:
-            if len(verb) > 2 and "lm=\"" + verb + "\"" not in dictionary:
-                verb = verb.strip()
-                if verb.endswith("si"):
-                    verb = verb[:-2]
-                    verb = verb.replace("ì", "i")
-                    verb = verb.replace("ò", "o")
-                    verb = verb.replace("à", "a")
-                    verb = verb.replace("è", "e")
-                    verb = verb.replace("ù", "u")
-                entry = "NO ENTRY" + verb
+            try:
+                if len(verb) > 4 and "lm=\"" + verb not in dictionary:
+                    verb = verb.strip()
+                    if verb.endswith("si"):
+                        verb = verb[:-2]
+                        verb = verb.replace("ì", "i")
+                        verb = verb.replace("ò", "o")
+                        verb = verb.replace("à", "a")
+                        verb = verb.replace("è", "e")
+                        verb = verb.replace("ù", "u")
+                    entry = "NO ENTRY" + verb
 
-                # check if the verb is regular or not:
-                if not verb.endswith("iari") and replace_voc(verb):
-                    form = replace_voc(verb)
-                    if re.search("\W"+form+"\W", corpus):
+                    # check if the verb is regular or not:
+                    if not verb.endswith("iari") and replace_voc(verb):
+                        form = replace_voc(verb)
+                        if re.search("\W"+form+"\W", corpus):
 
-                        # find root, first form (singular) and second form (plural)
-                        root = verb[:-3]
-                        first_form = form[:-1]
-                        second_form = replace_voc(verb, search=False)
+                            # find root, first form (singular) and second form (plural)
+                            root = verb[:-3]
+                            first_form = form[:-1]
+                            second_form = replace_voc(verb, search=False)
 
-                        # check consonant
-                        if root.endswith("c") or root.endswith("g"):
-                            entry = nvocari.replace("LEMMA", verb)
-                            entry = entry.replace("ROOT", root)
-                            entry = entry.replace("FIRST", first_form)
-                            entry = entry.replace("SECOND", second_form)
+                            # check consonant
+                            if root.endswith("c") or root.endswith("g"):
+                                entry = nvocari.replace("LEMMA", verb)
+                                entry = entry.replace("ROOT", root)
+                                entry = entry.replace("FIRST", first_form)
+                                entry = entry.replace("SECOND", second_form)
+                            else:
+                                entry = abbintari.replace("LEMMA", verb)
+                                entry = entry.replace("ROOT", root)
+                                entry = entry.replace("FIRST", first_form)
+                                entry = entry.replace("SECOND", second_form)
+                            # READY!!!
+                            # print(entry)
                         else:
-                            entry = abbintari.replace("LEMMA", verb)
-                            entry = entry.replace("ROOT", root)
-                            entry = entry.replace("FIRST", first_form)
-                            entry = entry.replace("SECOND", second_form)
-                        # READY!!!
-                        # print(entry)
+                            if verb.endswith("ari"):
+                                if verb.endswith("cari"):
+                                    entry = build_paradigm(verb, mancari)
+                                else:
+                                    entry = build_paradigm(verb, parrari)
+                            elif verb.endswith("iri"):
+                                entry = build_paradigm(verb, battiri)
+                            else:
+                                print("NO PARADIMG", verb)
                     else:
                         if verb.endswith("ari"):
                             if verb.endswith("cari"):
@@ -124,20 +143,17 @@ with open("sicilian_verbs.txt", "r", encoding="utf-8") as verbs_file, open("scn.
                             entry = build_paradigm(verb, battiri)
                         else:
                             print("NO PARADIMG", verb)
-                else:
-                    if verb.endswith("ari"):
-                        if verb.endswith("cari"):
-                            entry = build_paradigm(verb, mancari)
-                        else:
-                            entry = build_paradigm(verb, parrari)
-                    elif verb.endswith("iri"):
-                        entry = build_paradigm(verb, battiri)
-                    else:
-                        print("NO PARADIMG", verb)
-                print(entry)
-                entries_file.write(entry + "\n")
+                    # print(entry)
+                    if "NO " not in entry:
+                        entries_file.write(entry + "\n")
+            except Exception as err:
+                print(err, verb)
+            count += 1
+            if count%100 == 0:
+                print("Analyzed", count, "verbs.")
 
-with open("entries_file.txt", 'r') as new_entries, open("dictionary.txt", 'a', encoding="utf-8") as dictionary:
+with open("entries.txt", 'r') as new_entries, open("dictionary.txt", 'a', encoding="utf-8") as dictionary:
     dictionary.write("\n")
     for new_entry in new_entries:
-        dictionary.write(new_entry.strip() + "\n")
+        if "NO " not in new_entry:
+            dictionary.write(new_entry.strip() + "\n")

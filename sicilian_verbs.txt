@@ -9,8 +9,8 @@ abbacari
 abbacchiari
 abbachiari
 abbadagghiari
-abbadari
-abbaddari
+abba
+abbad
 abbaddariari
 abbaddiari
 abbaddunari
@@ -91,8 +91,8 @@ abbruscari
 abbrusciari
 abbrìsciri
 abbuccari
-abbudari
-abbuddari
+abbu
+abbud
 abbudurari
 abbuffari
 abbulari
@@ -168,7 +168,7 @@ accuminciari
 accuminzari
 accumpagnari
 accumulari
-accuncumiddari
+accuncumid
 accunzari
 accupari
 accupunari
@@ -255,7 +255,7 @@ affuranari
 affurturari
 affutari
 affènniri
-aggaddari
+aggad
 aggaffari
 aggagghiari
 aggammari
@@ -417,7 +417,7 @@ ammazzari
 ammiari
 ammicciari
 ammicinari
-ammiddari
+ammid
 ammilari
 ammilintari
 amminchialiri
@@ -448,7 +448,7 @@ ammunitari
 ammuntuari
 ammuntunari
 ammuntuvari
-ammunziddari
+ammunzid
 ammuragghiari
 ammurazzari
 ammurcari
@@ -458,7 +458,7 @@ ammurrari
 ammursagghiari
 ammursari
 ammusciari
-ammusciddari
+ammuscid
 ammusciulari
 ammussari
 ammustrari
@@ -480,10 +480,10 @@ annarcari
 annari
 annarmaliri
 annarvuliari
-annarziddari
+annarzid
 annasari
 annascari
-annasciaudari
+annasciau
 annastracari
 annauliari
 annaurari
@@ -517,7 +517,7 @@ annurvari
 ansari
 anzari
 appagnari
-appaidari
+appai
 appalurari
 apparagghiari
 apparanzari
@@ -527,7 +527,7 @@ appattari
 appicciari
 appiccicari
 appiculari
-appiddari
+appid
 appidicari
 appigghiari
 appilari
@@ -549,7 +549,7 @@ appruiari
 appruntari
 appruvicciari
 appruvinzari
-appuddari
+appud
 appunzunari
 appurari
 appurpari
@@ -568,7 +568,7 @@ arpasciari
 arraccamari
 arracchiari
 arraciatari
-arradari
+arra
 arraduzzari
 arraffari
 arraggiari
@@ -595,13 +595,13 @@ arribbuccari
 arricanùsciri
 arricintari
 arricriari
-arricurdari
+arricur
 arriddùciri
 arridùciri
 arrifardiari
 arriffari
 arrigalari
-arriguardari
+arriguar
 arrigulari
 arriiri
 arrijalari
@@ -613,7 +613,7 @@ arrimbari
 arrimiggiari
 arriminari
 arrimiscari
-arrimuddari
+arrimud
 arrimunnari
 arrimuttari
 arrinansari
@@ -649,7 +649,7 @@ arrittari
 arritunari
 arriulari
 arriuncari
-arrivardari
+arrivar
 arrivari
 arrivigghiari
 arrivintari
@@ -668,7 +668,7 @@ arrubbari
 arruccari
 arrucchiari
 arrucciuliari
-arruddari
+arrud
 arruggiari
 arruiari
 arrujari
@@ -694,7 +694,7 @@ arruzzuliari
 arrìdiri
 arrùmpiri
 arziari
-arziddari
+arzid
 asaminari
 ascari
 asciluccari
@@ -713,7 +713,7 @@ assaggiari
 assaiari
 assantucchiari
 assantumari
-assardari
+assar
 assassunari
 assiari
 assicchiari
@@ -818,17 +818,17 @@ azzazzari
 azziccagnari
 azziccari
 azziddarari
-azziddari
+azzid
 azziddicari
 azzimmari
-azzimmiddari
+azzimmid
 azziringari
 azzitari
 azzizzari
 azzubbunari
 azzuccari
 azzuddarari
-azzuddari
+azzud
 azzulari
 azzuliari
 azzummari
@@ -839,7 +839,7 @@ babbiari
 bacazziari
 baccariari
 badagghiari
-badari
+ba
 baddariari
 baddiari
 badducchiari
@@ -890,7 +890,7 @@ brustiari
 bruvicari
 bruvucari
 buciari
-buddari
+bud
 buduriari
 buffuniari
 bummuliari
@@ -917,11 +917,11 @@ cacc%C3%AFari
 caciari
 caddiari
 cadiri
-cafuddari
+cafud
 cagghiari
 calari
 calculari
-calendari
+calen
 caliari
 calibbrari
 calibrari
@@ -1103,7 +1103,7 @@ cucchiari
 cuccuniari
 cuciuniari
 cuculiari
-cuddari
+cud
 cuddiari
 cudiari
 cudiciari
@@ -1197,7 +1197,6 @@ cùrriri
 cùsiri
 dangaliari
 danguliari
-dari
 dasciari
 ddanguliari
 ddrivigghiari
@@ -1292,8 +1291,8 @@ faviari
 favuriri
 ficcari
 ficcichiari
-fidari
-fiddari
+fi
+fid
 fidduliari
 figghiari
 filari
@@ -1337,7 +1336,7 @@ fruciari
 fruiri
 frusculiari
 fuattiari
-fuddari
+fud
 fudduniari
 fugattiari
 fuittiari
@@ -1359,7 +1358,7 @@ fùiri
 fùjiri
 fùttiri
 gabbari
-gaddari
+gad
 gaddariari
 gaddiari
 gaggiari
@@ -1404,7 +1403,7 @@ gnaccari
 gnardinari
 gnignuliari
 gnilari
-gnimiddari
+gnimid
 gniscari
 gnissari
 gnittari
@@ -1419,13 +1418,13 @@ granfiari
 graniari
 granniari
 grattari
-gridari
+gri
 grignari
 grinfari
 gràpiri
 guadagnari
-guardari
-guidari
+guar
+gui
 gòdiri
 iastimari
 iastimiari
@@ -1463,7 +1462,6 @@ jastimiari
 jilari
 jiniari
 jinnariari
-jiri
 jisari
 jittari
 jttari
@@ -1489,7 +1487,6 @@ laqueari
 lardiari
 lassari
 lastimiari
-laudari
 lavari
 lavurari
 liari
@@ -1511,7 +1508,6 @@ livantari
 livari
 lucari
 lucchiari
-ludari
 lunariari
 lunghiari
 lupiari
@@ -1534,7 +1530,6 @@ malucchiari
 manciari
 manciariari
 manciuniari
-mandari
 mandriari
 mangiari
 maniari
@@ -1563,7 +1558,7 @@ mazzariari
 mazziari
 mbabbaniri
 mbaciliri
-mbaddari
+mbad
 mbadducchiri
 mbaddunari
 mbaittari
@@ -1573,7 +1568,7 @@ mbarrari
 mbausari
 mbazari
 mbiciari
-mbiddari
+mbid
 mbiliri
 mbiscari
 mbisitari
@@ -1584,16 +1579,16 @@ mbrazzari
 mbrucari
 mbrucchiari
 mbrucculiari
-mbruddari
+mbrud
 mbrugghiari
 mbrusciunari
 mbuccagghiari
 mbucculari
-mbudari
+mbu
 mburdiri
 mburracciari
 mburrunari
-mbusciddari
+mbuscid
 mbusciulari
 mbusunari
 mbutricari
@@ -1628,7 +1623,7 @@ mmattaliari
 mmiancari
 mmiari
 mmicchiari
-mmiddari
+mmid
 mmiddiri
 mmilliri
 mmillittari
@@ -1647,7 +1642,7 @@ mmudurriri
 mmuffulari
 mmurdiri
 mmusari
-mmusciddari
+mmuscid
 mmustari
 mmustrari
 mmuttari
@@ -1656,12 +1651,12 @@ mmèssiri
 mmèstiri
 mogghiari
 mpacchiari
-mpaddari
+mpad
 mpaiari
 mpajari
 mpalurari
 mpampanari
-mpanniddari
+mpannid
 mpaparinari
 mpapucchiari
 mparari
@@ -1675,16 +1670,16 @@ mpianciari
 mpicari
 mpiccicari
 mpiciari
-mpiddari
+mpid
 mpidicari
-mpidicuddari
+mpidicud
 mpidugghiari
 mpijurari
 mpilari
 mpinnichiari
 mpinnuliari
 mpinucchiari
-mpipiriddari
+mpipirid
 mpircialari
 mpirlicchiari
 mpirrari
@@ -1739,7 +1734,7 @@ nanfariari
 naniari
 nantistiari
 nargiari
-narziddari
+narzid
 naschiari
 nastentari
 natari
@@ -1749,7 +1744,6 @@ navigari
 navittiari
 ncabbubbari
 ncaccamari
-ncaddari
 ncagghiari
 ncagnari
 ncamiari
@@ -1758,7 +1752,7 @@ ncamurchiari
 ncamurciari
 ncancarari
 ncancariri
-ncanciddari
+ncancid
 ncanigghiari
 ncannacari
 ncannaruzzari
@@ -1768,7 +1762,7 @@ ncantinari
 ncantunari
 ncapicchiari
 ncapizzari
-ncappiddari
+ncappid
 ncarcari
 ncariri
 ncarmari
@@ -1776,7 +1770,7 @@ ncarpitari
 ncarracchiari
 ncarrucciari
 ncartari
-ncarusiddari
+ncarusid
 ncarvaniri
 ncasciari
 ncastagnari
@@ -1789,7 +1783,7 @@ ncaucinari
 ncazzari
 ncazzuliri
 nchiaccari
-nchiafardari
+nchiafar
 nchianari
 nchianculari
 nchianculiri
@@ -1801,7 +1795,7 @@ nchiatrari
 nchicari
 nchimari
 nchimiddiari
-nchirchiddari
+nchirchid
 nchirchigghiari
 nchirchiggiari
 nchiucchiulari
@@ -1815,13 +1809,13 @@ ncignari
 ncilinnari
 ncilippari
 ncimari
-ncimiddari
+ncimid
 ncimiddiari
 ncincinnari
-ncipuddari
+ncipud
 ncirari
 ncircari
-ncirciddari
+ncircid
 ncircigghiari
 ncirrari
 nciumari
@@ -1880,7 +1874,7 @@ ndingari
 ndirizzari
 ndivinari
 ndurari
-nfadari
+nfa
 nfafucchiari
 nfarragginari
 nfarrainari
@@ -1893,7 +1887,7 @@ nfinucchiari
 nfurmari
 nfurrari
 nfutari
-ngaddari
+ngad
 ngadduliari
 ngagghiari
 ngagghiuffari
@@ -1910,7 +1904,7 @@ ngargiulari
 ngarrari
 ngarrunari
 ngarzari
-ngarziddari
+ngarzid
 ngaspari
 ngassinari
 ngastari
@@ -1950,7 +1944,7 @@ ngrugnari
 ngrugnunari
 nguaggiari
 nguainiri
-ngudari
+ngu
 nguliari
 ngummintari
 ngurgiari
@@ -1985,7 +1979,7 @@ nsalaniri
 nsancuniari
 nsanguliari
 nsanguniari
-nsardari
+nsar
 nsarmunari
 nsavacciari
 nsavanari
@@ -2010,7 +2004,7 @@ ntabbanari
 ntabbariniri
 ntabbarrari
 ntacciari
-ntaddari
+ntad
 ntaddiri
 ntaiari
 ntajari
@@ -2023,12 +2017,12 @@ ntampasuniri
 ntantuliari
 ntapazzari
 ntappari
-ntaraddari
+ntarad
 ntarcari
 ntarchiari
 ntargiari
 ntartagghiari
-ntaviddari
+ntavid
 nticchiari
 nticciari
 ntimiari
@@ -2041,7 +2035,7 @@ ntintiri
 ntintiriddiri
 ntinturiri
 ntipari
-ntipuddari
+ntipud
 ntirpritari
 ntirrugari
 ntirrurari
@@ -2064,8 +2058,8 @@ ntrugghiari
 ntrummari
 ntrunari
 ntrunzari
-ntrupiddari
-ntruppiddari
+ntrupid
+ntruppid
 ntrusciari
 ntràsiri
 ntuciari
@@ -2096,7 +2090,7 @@ nzallaniri
 nzancuniari
 nzanguliari
 nzanguniari
-nzardari
+nzar
 nzarmunari
 nzavacciari
 nzavanari
@@ -2263,7 +2257,7 @@ prupòniri
 pruvari
 prànciri
 prùdiri
-puddari
+pud
 puliri
 puliziari
 pulizziari
@@ -2311,12 +2305,12 @@ ricitari
 ricumpinsari
 ricumpinzari
 ricupirari
-ricurdari
+ricur
 ricìviri
 riditari
 rifiutari
 rigalari
-riguardari
+riguar
 rijalari
 rimari
 rimpruvirari
@@ -2331,7 +2325,7 @@ ristari
 ristituiri
 risìstiri
 ritirari
-rivardari
+rivar
 rubari
 rubbari
 rufuliari
@@ -2408,10 +2402,10 @@ sdillabbrari
 sdisiccari
 sdrivigghiari
 sdurrubbari
-sfardari
+sfar
 sfari
 sfracassari
-sfraddari
+sfrad
 sfurzari
 sgaddinari
 sgavitari
@@ -2454,7 +2448,7 @@ spurtusari
 sputari
 spàrtiri
 spènniri
-squadari
+squa
 squarari
 stabbiliri
 stabiliri
@@ -2463,7 +2457,7 @@ starnutari
 stimari
 stipari
 stirari
-straddari
+strad
 stralùciri
 strascinari
 strasèntiri
@@ -2535,7 +2529,7 @@ tìnciri
 tìngiri
 tòrciri
 tùnniri
-uardari
+uar
 ubbidiri
 uccìdiri
 uffriri
@@ -2552,7 +2546,7 @@ valiri
 vanniari
 vantari
 varagnari
-vardari
+var
 variari
 vasari
 vattiari
@@ -2639,7 +2633,7 @@ tìnciri
 tìngiri
 tòrciri
 tùnniri
-uardari
+uar
 ubbidiri
 uccìdiri
 uffriri
@@ -2656,7 +2650,7 @@ valiri
 vanniari
 vantari
 varagnari
-vardari
+var
 variari
 vasari
 vattiari
@@ -2743,7 +2737,7 @@ tìnciri
 tìngiri
 tòrciri
 tùnniri
-uardari
+uar
 ubbidiri
 uccìdiri
 uffriri
@@ -2760,7 +2754,7 @@ valiri
 vanniari
 vantari
 varagnari
-vardari
+var
 variari
 vasari
 vattiari
@@ -2847,7 +2841,7 @@ tìnciri
 tìngiri
 tòrciri
 tùnniri
-uardari
+uar
 ubbidiri
 uccìdiri
 uffriri
@@ -2864,7 +2858,7 @@ valiri
 vanniari
 vantari
 varagnari
-vardari
+var
 variari
 vasari
 vattiari
@@ -2951,7 +2945,7 @@ tìnciri
 tìngiri
 tòrciri
 tùnniri
-uardari
+uar
 ubbidiri
 uccìdiri
 uffriri
@@ -2968,7 +2962,7 @@ valiri
 vanniari
 vantari
 varagnari
-vardari
+var
 variari
 vasari
 vattiari
@@ -3055,7 +3049,7 @@ tìnciri
 tìngiri
 tòrciri
 tùnniri
-uardari
+uar
 ubbidiri
 uccìdiri
 uffriri
@@ -3072,7 +3066,7 @@ valiri
 vanniari
 vantari
 varagnari
-vardari
+var
 variari
 vasari
 vattiari
@@ -3159,7 +3153,7 @@ tìnciri
 tìngiri
 tòrciri
 tùnniri
-uardari
+uar
 ubbidiri
 uccìdiri
 uffriri
@@ -3176,7 +3170,7 @@ valiri
 vanniari
 vantari
 varagnari
-vardari
+var
 variari
 vasari
 vattiari
@@ -3263,7 +3257,7 @@ tìnciri
 tìngiri
 tòrciri
 tùnniri
-uardari
+uar
 ubbidiri
 uccìdiri
 uffriri
@@ -3280,7 +3274,7 @@ valiri
 vanniari
 vantari
 varagnari
-vardari
+var
 variari
 vasari
 vattiari
@@ -3367,7 +3361,7 @@ tìnciri
 tìngiri
 tòrciri
 tùnniri
-uardari
+uar
 ubbidiri
 uccìdiri
 uffriri
@@ -3384,7 +3378,7 @@ valiri
 vanniari
 vantari
 varagnari
-vardari
+var
 variari
 vasari
 vattiari
@@ -3471,7 +3465,7 @@ tìnciri
 tìngiri
 tòrciri
 tùnniri
-uardari
+uar
 ubbidiri
 uccìdiri
 uffriri
@@ -3488,7 +3482,7 @@ valiri
 vanniari
 vantari
 varagnari
-vardari
+var
 variari
 vasari
 vattiari
@@ -3575,7 +3569,7 @@ tìnciri
 tìngiri
 tòrciri
 tùnniri
-uardari
+uar
 ubbidiri
 uccìdiri
 uffriri
@@ -3592,7 +3586,7 @@ valiri
 vanniari
 vantari
 varagnari
-vardari
+var
 variari
 vasari
 vattiari
@@ -3679,7 +3673,7 @@ tìnciri
 tìngiri
 tòrciri
 tùnniri
-uardari
+uar
 ubbidiri
 uccìdiri
 uffriri
@@ -3696,7 +3690,7 @@ valiri
 vanniari
 vantari
 varagnari
-vardari
+var
 variari
 vasari
 vattiari
@@ -3783,7 +3777,7 @@ tìnciri
 tìngiri
 tòrciri
 tùnniri
-uardari
+uar
 ubbidiri
 uccìdiri
 uffriri
@@ -3800,7 +3794,7 @@ valiri
 vanniari
 vantari
 varagnari
-vardari
+var
 variari
 vasari
 vattiari
@@ -3887,7 +3881,7 @@ tìnciri
 tìngiri
 tòrciri
 tùnniri
-uardari
+uar
 ubbidiri
 uccìdiri
 uffriri
@@ -3904,7 +3898,7 @@ valiri
 vanniari
 vantari
 varagnari
-vardari
+var
 variari
 vasari
 vattiari
@@ -3991,7 +3985,7 @@ tìnciri
 tìngiri
 tòrciri
 tùnniri
-uardari
+uar
 ubbidiri
 uccìdiri
 uffriri
@@ -4008,7 +4002,7 @@ valiri
 vanniari
 vantari
 varagnari
-vardari
+var
 variari
 vasari
 vattiari
@@ -4095,7 +4089,7 @@ tìnciri
 tìngiri
 tòrciri
 tùnniri
-uardari
+uar
 ubbidiri
 uccìdiri
 uffriri
@@ -4112,7 +4106,7 @@ valiri
 vanniari
 vantari
 varagnari
-vardari
+var
 variari
 vasari
 vattiari
@@ -4199,7 +4193,7 @@ tìnciri
 tìngiri
 tòrciri
 tùnniri
-uardari
+uar
 ubbidiri
 uccìdiri
 uffriri
@@ -4216,7 +4210,7 @@ valiri
 vanniari
 vantari
 varagnari
-vardari
+var
 variari
 vasari
 vattiari
@@ -4303,7 +4297,7 @@ tìnciri
 tìngiri
 tòrciri
 tùnniri
-uardari
+uar
 ubbidiri
 uccìdiri
 uffriri
@@ -4320,7 +4314,7 @@ valiri
 vanniari
 vantari
 varagnari
-vardari
+var
 variari
 vasari
 vattiari
@@ -4407,7 +4401,7 @@ tìnciri
 tìngiri
 tòrciri
 tùnniri
-uardari
+uar
 ubbidiri
 uccìdiri
 uffriri
@@ -4424,7 +4418,7 @@ valiri
 vanniari
 vantari
 varagnari
-vardari
+var
 variari
 vasari
 vattiari
@@ -4511,7 +4505,7 @@ tìnciri
 tìngiri
 tòrciri
 tùnniri
-uardari
+uar
 ubbidiri
 uccìdiri
 uffriri
@@ -4528,7 +4522,7 @@ valiri
 vanniari
 vantari
 varagnari
-vardari
+var
 variari
 vasari
 vattiari
@@ -4615,7 +4609,7 @@ tìnciri
 tìngiri
 tòrciri
 tùnniri
-uardari
+uar
 ubbidiri
 uccìdiri
 uffriri
@@ -4632,7 +4626,7 @@ valiri
 vanniari
 vantari
 varagnari
-vardari
+var
 variari
 vasari
 vattiari
@@ -4719,7 +4713,7 @@ tìnciri
 tìngiri
 tòrciri
 tùnniri
-uardari
+uar
 ubbidiri
 uccìdiri
 uffriri
@@ -4736,7 +4730,7 @@ valiri
 vanniari
 vantari
 varagnari
-vardari
+var
 variari
 vasari
 vattiari
@@ -4823,7 +4817,7 @@ tìnciri
 tìngiri
 tòrciri
 tùnniri
-uardari
+uar
 ubbidiri
 uccìdiri
 uffriri
@@ -4840,7 +4834,7 @@ valiri
 vanniari
 vantari
 varagnari
-vardari
+var
 variari
 vasari
 vattiari
@@ -4927,7 +4921,7 @@ tìnciri
 tìngiri
 tòrciri
 tùnniri
-uardari
+uar
 ubbidiri
 uccìdiri
 uffriri
@@ -4944,7 +4938,7 @@ valiri
 vanniari
 vantari
 varagnari
-vardari
+var
 variari
 vasari
 vattiari
@@ -5031,7 +5025,7 @@ tìnciri
 tìngiri
 tòrciri
 tùnniri
-uardari
+uar
 ubbidiri
 uccìdiri
 uffriri
@@ -5048,7 +5042,7 @@ valiri
 vanniari
 vantari
 varagnari
-vardari
+var
 variari
 vasari
 vattiari
@@ -5135,7 +5129,7 @@ tìnciri
 tìngiri
 tòrciri
 tùnniri
-uardari
+uar
 ubbidiri
 uccìdiri
 uffriri
@@ -5152,7 +5146,7 @@ valiri
 vanniari
 vantari
 varagnari
-vardari
+var
 variari
 vasari
 vattiari
@@ -5239,7 +5233,7 @@ tìnciri
 tìngiri
 tòrciri
 tùnniri
-uardari
+uar
 ubbidiri
 uccìdiri
 uffriri
@@ -5256,7 +5250,7 @@ valiri
 vanniari
 vantari
 varagnari
-vardari
+var
 variari
 vasari
 vattiari
@@ -5343,7 +5337,7 @@ tìnciri
 tìngiri
 tòrciri
 tùnniri
-uardari
+uar
 ubbidiri
 uccìdiri
 uffriri
@@ -5360,7 +5354,7 @@ valiri
 vanniari
 vantari
 varagnari
-vardari
+var
 variari
 vasari
 vattiari
@@ -5443,7 +5437,7 @@ tìnciri
 tìngiri
 tòrciri
 tùnniri
-uardari
+uar
 ubbidiri
 uccìdiri
 uffriri
@@ -5460,7 +5454,7 @@ valiri
 vanniari
 vantari
 varagnari
-vardari
+var
 variari
 vasari
 vattiari
@@ -5543,7 +5537,7 @@ tìnciri
 tìngiri
 tòrciri
 tùnniri
-uardari
+uar
 ubbidiri
 uccìdiri
 uffriri
@@ -5560,7 +5554,7 @@ valiri
 vanniari
 vantari
 varagnari
-vardari
+var
 variari
 vasari
 vattiari
@@ -5647,7 +5641,7 @@ tìnciri
 tìngiri
 tòrciri
 tùnniri
-uardari
+uar
 ubbidiri
 uccìdiri
 uffriri
@@ -5664,7 +5658,7 @@ valiri
 vanniari
 vantari
 varagnari
-vardari
+var
 variari
 vasari
 vattiari
@@ -5751,7 +5745,7 @@ tìnciri
 tìngiri
 tòrciri
 tùnniri
-uardari
+uar
 ubbidiri
 uccìdiri
 uffriri
@@ -5768,7 +5762,7 @@ valiri
 vanniari
 vantari
 varagnari
-vardari
+var
 variari
 vasari
 vattiari
@@ -5855,7 +5849,7 @@ tìnciri
 tìngiri
 tòrciri
 tùnniri
-uardari
+uar
 ubbidiri
 uccìdiri
 uffriri
@@ -5872,7 +5866,7 @@ valiri
 vanniari
 vantari
 varagnari
-vardari
+var
 variari
 vasari
 vattiari
@@ -5959,7 +5953,7 @@ tìnciri
 tìngiri
 tòrciri
 tùnniri
-uardari
+uar
 ubbidiri
 uccìdiri
 uffriri
@@ -5976,7 +5970,7 @@ valiri
 vanniari
 vantari
 varagnari
-vardari
+var
 variari
 vasari
 vattiari
@@ -6063,7 +6057,7 @@ tìnciri
 tìngiri
 tòrciri
 tùnniri
-uardari
+uar
 ubbidiri
 uccìdiri
 uffriri
@@ -6080,7 +6074,7 @@ valiri
 vanniari
 vantari
 varagnari
-vardari
+var
 variari
 vasari
 vattiari
@@ -6167,7 +6161,7 @@ tìnciri
 tìngiri
 tòrciri
 tùnniri
-uardari
+uar
 ubbidiri
 uccìdiri
 uffriri
@@ -6184,7 +6178,7 @@ valiri
 vanniari
 vantari
 varagnari
-vardari
+var
 variari
 vasari
 vattiari
@@ -6271,7 +6265,7 @@ tìnciri
 tìngiri
 tòrciri
 tùnniri
-uardari
+uar
 ubbidiri
 uccìdiri
 uffriri
@@ -6288,7 +6282,7 @@ valiri
 vanniari
 vantari
 varagnari
-vardari
+var
 variari
 vasari
 vattiari
@@ -6375,7 +6369,7 @@ tìnciri
 tìngiri
 tòrciri
 tùnniri
-uardari
+uar
 ubbidiri
 uccìdiri
 uffriri
@@ -6392,7 +6386,7 @@ valiri
 vanniari
 vantari
 varagnari
-vardari
+var
 variari
 vasari
 vattiari
@@ -6479,7 +6473,7 @@ tìnciri
 tìngiri
 tòrciri
 tùnniri
-uardari
+uar
 ubbidiri
 uccìdiri
 uffriri
@@ -6496,7 +6490,7 @@ valiri
 vanniari
 vantari
 varagnari
-vardari
+var
 variari
 vasari
 vattiari
@@ -6583,7 +6577,7 @@ tìnciri
 tìngiri
 tòrciri
 tùnniri
-uardari
+uar
 ubbidiri
 uccìdiri
 uffriri
@@ -6600,7 +6594,7 @@ valiri
 vanniari
 vantari
 varagnari
-vardari
+var
 variari
 vasari
 vattiari
@@ -6687,7 +6681,7 @@ tìnciri
 tìngiri
 tòrciri
 tùnniri
-uardari
+uar
 ubbidiri
 uccìdiri
 uffriri
@@ -6704,7 +6698,7 @@ valiri
 vanniari
 vantari
 varagnari
-vardari
+var
 variari
 vasari
 vattiari
@@ -6791,7 +6785,7 @@ tìnciri
 tìngiri
 tòrciri
 tùnniri
-uardari
+uar
 ubbidiri
 uccìdiri
 uffriri
@@ -6808,7 +6802,7 @@ valiri
 vanniari
 vantari
 varagnari
-vardari
+var
 variari
 vasari
 vattiari
@@ -6895,7 +6889,7 @@ tìnciri
 tìngiri
 tòrciri
 tùnniri
-uardari
+uar
 ubbidiri
 uccìdiri
 uffriri
@@ -6912,7 +6906,7 @@ valiri
 vanniari
 vantari
 varagnari
-vardari
+var
 variari
 vasari
 vattiari
@@ -6999,7 +6993,7 @@ tìnciri
 tìngiri
 tòrciri
 tùnniri
-uardari
+uar
 ubbidiri
 uccìdiri
 uffriri
@@ -7016,7 +7010,7 @@ valiri
 vanniari
 vantari
 varagnari
-vardari
+var
 variari
 vasari
 vattiari
@@ -7103,7 +7097,7 @@ tìnciri
 tìngiri
 tòrciri
 tùnniri
-uardari
+uar
 ubbidiri
 uccìdiri
 uffriri
@@ -7120,7 +7114,7 @@ valiri
 vanniari
 vantari
 varagnari
-vardari
+var
 variari
 vasari
 vattiari
@@ -7207,7 +7201,7 @@ tìnciri
 tìngiri
 tòrciri
 tùnniri
-uardari
+uar
 ubbidiri
 uccìdiri
 uffriri
@@ -7224,7 +7218,7 @@ valiri
 vanniari
 vantari
 varagnari
-vardari
+var
 variari
 vasari
 vattiari
@@ -7311,7 +7305,7 @@ tìnciri
 tìngiri
 tòrciri
 tùnniri
-uardari
+uar
 ubbidiri
 uccìdiri
 uffriri
@@ -7328,7 +7322,7 @@ valiri
 vanniari
 vantari
 varagnari
-vardari
+var
 variari
 vasari
 vattiari
@@ -7415,7 +7409,7 @@ tìnciri
 tìngiri
 tòrciri
 tùnniri
-uardari
+uar
 ubbidiri
 uccìdiri
 uffriri
@@ -7432,7 +7426,7 @@ valiri
 vanniari
 vantari
 varagnari
-vardari
+var
 variari
 vasari
 vattiari
@@ -7519,7 +7513,7 @@ tìnciri
 tìngiri
 tòrciri
 tùnniri
-uardari
+uar
 ubbidiri
 uccìdiri
 uffriri
@@ -7536,7 +7530,7 @@ valiri
 vanniari
 vantari
 varagnari
-vardari
+var
 variari
 vasari
 vattiari
@@ -7623,7 +7617,7 @@ tìnciri
 tìngiri
 tòrciri
 tùnniri
-uardari
+uar
 ubbidiri
 uccìdiri
 uffriri
@@ -7640,7 +7634,7 @@ valiri
 vanniari
 vantari
 varagnari
-vardari
+var
 variari
 vasari
 vattiari
@@ -7727,7 +7721,7 @@ tìnciri
 tìngiri
 tòrciri
 tùnniri
-uardari
+uar
 ubbidiri
 uccìdiri
 uffriri
@@ -7744,7 +7738,7 @@ valiri
 vanniari
 vantari
 varagnari
-vardari
+var
 variari
 vasari
 vattiari
@@ -7831,7 +7825,7 @@ tìnciri
 tìngiri
 tòrciri
 tùnniri
-uardari
+uar
 ubbidiri
 uccìdiri
 uffriri
@@ -7848,7 +7842,7 @@ valiri
 vanniari
 vantari
 varagnari
-vardari
+var
 variari
 vasari
 vattiari
@@ -7935,7 +7929,7 @@ tìnciri
 tìngiri
 tòrciri
 tùnniri
-uardari
+uar
 ubbidiri
 uccìdiri
 uffriri
@@ -7952,7 +7946,7 @@ valiri
 vanniari
 vantari
 varagnari
-vardari
+var
 variari
 vasari
 vattiari
@@ -8039,7 +8033,7 @@ tìnciri
 tìngiri
 tòrciri
 tùnniri
-uardari
+uar
 ubbidiri
 uccìdiri
 uffriri
@@ -8056,7 +8050,7 @@ valiri
 vanniari
 vantari
 varagnari
-vardari
+var
 variari
 vasari
 vattiari
@@ -8143,7 +8137,7 @@ tìnciri
 tìngiri
 tòrciri
 tùnniri
-uardari
+uar
 ubbidiri
 uccìdiri
 uffriri
@@ -8160,7 +8154,7 @@ valiri
 vanniari
 vantari
 varagnari
-vardari
+var
 variari
 vasari
 vattiari
@@ -8247,7 +8241,7 @@ tìnciri
 tìngiri
 tòrciri
 tùnniri
-uardari
+uar
 ubbidiri
 uccìdiri
 uffriri
@@ -8264,7 +8258,7 @@ valiri
 vanniari
 vantari
 varagnari
-vardari
+var
 variari
 vasari
 vattiari
@@ -8351,7 +8345,7 @@ tìnciri
 tìngiri
 tòrciri
 tùnniri
-uardari
+uar
 ubbidiri
 uccìdiri
 uffriri
@@ -8368,7 +8362,7 @@ valiri
 vanniari
 vantari
 varagnari
-vardari
+var
 variari
 vasari
 vattiari
@@ -8455,7 +8449,7 @@ tìnciri
 tìngiri
 tòrciri
 tùnniri
-uardari
+uar
 ubbidiri
 uccìdiri
 uffriri
@@ -8472,7 +8466,7 @@ valiri
 vanniari
 vantari
 varagnari
-vardari
+var
 variari
 vasari
 vattiari
@@ -8559,7 +8553,7 @@ tìnciri
 tìngiri
 tòrciri
 tùnniri
-uardari
+uar
 ubbidiri
 uccìdiri
 uffriri
@@ -8576,7 +8570,7 @@ valiri
 vanniari
 vantari
 varagnari
-vardari
+var
 variari
 vasari
 vattiari
@@ -8663,7 +8657,7 @@ tìnciri
 tìngiri
 tòrciri
 tùnniri
-uardari
+uar
 ubbidiri
 uccìdiri
 uffriri
@@ -8680,7 +8674,7 @@ valiri
 vanniari
 vantari
 varagnari
-vardari
+var
 variari
 vasari
 vattiari
@@ -8767,7 +8761,7 @@ tìnciri
 tìngiri
 tòrciri
 tùnniri
-uardari
+uar
 ubbidiri
 uccìdiri
 uffriri
@@ -8784,7 +8778,7 @@ valiri
 vanniari
 vantari
 varagnari
-vardari
+var
 variari
 vasari
 vattiari
@@ -8871,7 +8865,7 @@ tìnciri
 tìngiri
 tòrciri
 tùnniri
-uardari
+uar
 ubbidiri
 uccìdiri
 uffriri
@@ -8888,7 +8882,7 @@ valiri
 vanniari
 vantari
 varagnari
-vardari
+var
 variari
 vasari
 vattiari
@@ -8975,7 +8969,7 @@ tìnciri
 tìngiri
 tòrciri
 tùnniri
-uardari
+uar
 ubbidiri
 uccìdiri
 uffriri
@@ -8992,7 +8986,7 @@ valiri
 vanniari
 vantari
 varagnari
-vardari
+var
 variari
 vasari
 vattiari
@@ -9079,7 +9073,7 @@ tìnciri
 tìngiri
 tòrciri
 tùnniri
-uardari
+uar
 ubbidiri
 uccìdiri
 uffriri
@@ -9096,7 +9090,7 @@ valiri
 vanniari
 vantari
 varagnari
-vardari
+var
 variari
 vasari
 vattiari
@@ -9183,7 +9177,7 @@ tìnciri
 tìngiri
 tòrciri
 tùnniri
-uardari
+uar
 ubbidiri
 uccìdiri
 uffriri
@@ -9200,7 +9194,7 @@ valiri
 vanniari
 vantari
 varagnari
-vardari
+var
 variari
 vasari
 vattiari
@@ -9287,7 +9281,7 @@ tìnciri
 tìngiri
 tòrciri
 tùnniri
-uardari
+uar
 ubbidiri
 uccìdiri
 uffriri
@@ -9304,7 +9298,7 @@ valiri
 vanniari
 vantari
 varagnari
-vardari
+var
 variari
 vasari
 vattiari
@@ -9391,7 +9385,7 @@ tìnciri
 tìngiri
 tòrciri
 tùnniri
-uardari
+uar
 ubbidiri
 uccìdiri
 uffriri
@@ -9408,7 +9402,7 @@ valiri
 vanniari
 vantari
 varagnari
-vardari
+var
 variari
 vasari
 vattiari
@@ -9495,7 +9489,7 @@ tìnciri
 tìngiri
 tòrciri
 tùnniri
-uardari
+uar
 ubbidiri
 uccìdiri
 uffriri
@@ -9512,7 +9506,7 @@ valiri
 vanniari
 vantari
 varagnari
-vardari
+var
 variari
 vasari
 vattiari
@@ -9599,7 +9593,7 @@ tìnciri
 tìngiri
 tòrciri
 tùnniri
-uardari
+uar
 ubbidiri
 uccìdiri
 uffriri
@@ -9616,7 +9610,7 @@ valiri
 vanniari
 vantari
 varagnari
-vardari
+var
 variari
 vasari
 vattiari
@@ -9703,7 +9697,7 @@ tìnciri
 tìngiri
 tòrciri
 tùnniri
-uardari
+uar
 ubbidiri
 uccìdiri
 uffriri
@@ -9720,7 +9714,7 @@ valiri
 vanniari
 vantari
 varagnari
-vardari
+var
 variari
 vasari
 vattiari
@@ -9807,7 +9801,7 @@ tìnciri
 tìngiri
 tòrciri
 tùnniri
-uardari
+uar
 ubbidiri
 uccìdiri
 uffriri
@@ -9824,7 +9818,7 @@ valiri
 vanniari
 vantari
 varagnari
-vardari
+var
 variari
 vasari
 vattiari
@@ -9911,7 +9905,7 @@ tìnciri
 tìngiri
 tòrciri
 tùnniri
-uardari
+uar
 ubbidiri
 uccìdiri
 uffriri
@@ -9928,7 +9922,7 @@ valiri
 vanniari
 vantari
 varagnari
-vardari
+var
 variari
 vasari
 vattiari
@@ -10015,7 +10009,7 @@ tìnciri
 tìngiri
 tòrciri
 tùnniri
-uardari
+uar
 ubbidiri
 uccìdiri
 uffriri
@@ -10032,7 +10026,7 @@ valiri
 vanniari
 vantari
 varagnari
-vardari
+var
 variari
 vasari
 vattiari
@@ -10119,7 +10113,7 @@ tìnciri
 tìngiri
 tòrciri
 tùnniri
-uardari
+uar
 ubbidiri
 uccìdiri
 uffriri
@@ -10136,7 +10130,7 @@ valiri
 vanniari
 vantari
 varagnari
-vardari
+var
 variari
 vasari
 vattiari
@@ -10223,7 +10217,7 @@ tìnciri
 tìngiri
 tòrciri
 tùnniri
-uardari
+uar
 ubbidiri
 uccìdiri
 uffriri
@@ -10240,7 +10234,7 @@ valiri
 vanniari
 vantari
 varagnari
-vardari
+var
 variari
 vasari
 vattiari
@@ -10327,7 +10321,7 @@ tìnciri
 tìngiri
 tòrciri
 tùnniri
-uardari
+uar
 ubbidiri
 uccìdiri
 uffriri
@@ -10344,7 +10338,7 @@ valiri
 vanniari
 vantari
 varagnari
-vardari
+var
 variari
 vasari
 vattiari
@@ -10431,7 +10425,7 @@ tìnciri
 tìngiri
 tòrciri
 tùnniri
-uardari
+uar
 ubbidiri
 uccìdiri
 uffriri
@@ -10448,7 +10442,7 @@ valiri
 vanniari
 vantari
 varagnari
-vardari
+var
 variari
 vasari
 vattiari
@@ -10535,7 +10529,7 @@ tìnciri
 tìngiri
 tòrciri
 tùnniri
-uardari
+uar
 ubbidiri
 uccìdiri
 uffriri
@@ -10552,7 +10546,7 @@ valiri
 vanniari
 vantari
 varagnari
-vardari
+var
 variari
 vasari
 vattiari
@@ -10639,7 +10633,7 @@ tìnciri
 tìngiri
 tòrciri
 tùnniri
-uardari
+uar
 ubbidiri
 uccìdiri
 uffriri
@@ -10656,7 +10650,7 @@ valiri
 vanniari
 vantari
 varagnari
-vardari
+var
 variari
 vasari
 vattiari
@@ -10743,7 +10737,7 @@ tìnciri
 tìngiri
 tòrciri
 tùnniri
-uardari
+uar
 ubbidiri
 uccìdiri
 uffriri
@@ -10760,7 +10754,7 @@ valiri
 vanniari
 vantari
 varagnari
-vardari
+var
 variari
 vasari
 vattiari
@@ -10847,7 +10841,7 @@ tìnciri
 tìngiri
 tòrciri
 tùnniri
-uardari
+uar
 ubbidiri
 uccìdiri
 uffriri
@@ -10864,7 +10858,7 @@ valiri
 vanniari
 vantari
 varagnari
-vardari
+var
 variari
 vasari
 vattiari
@@ -10951,7 +10945,7 @@ tìnciri
 tìngiri
 tòrciri
 tùnniri
-uardari
+uar
 ubbidiri
 uccìdiri
 uffriri
@@ -10968,7 +10962,7 @@ valiri
 vanniari
 vantari
 varagnari
-vardari
+var
 variari
 vasari
 vattiari
@@ -11055,7 +11049,7 @@ tìnciri
 tìngiri
 tòrciri
 tùnniri
-uardari
+uar
 ubbidiri
 uccìdiri
 uffriri
@@ -11072,7 +11066,7 @@ valiri
 vanniari
 vantari
 varagnari
-vardari
+var
 variari
 vasari
 vattiari
@@ -11159,7 +11153,7 @@ tìnciri
 tìngiri
 tòrciri
 tùnniri
-uardari
+uar
 ubbidiri
 uccìdiri
 uffriri
@@ -11176,7 +11170,7 @@ valiri
 vanniari
 vantari
 varagnari
-vardari
+var
 variari
 vasari
 vattiari
@@ -11263,7 +11257,7 @@ tìnciri
 tìngiri
 tòrciri
 tùnniri
-uardari
+uar
 ubbidiri
 uccìdiri
 uffriri
@@ -11280,7 +11274,7 @@ valiri
 vanniari
 vantari
 varagnari
-vardari
+var
 variari
 vasari
 vattiari
@@ -11367,7 +11361,7 @@ tìnciri
 tìngiri
 tòrciri
 tùnniri
-uardari
+uar
 ubbidiri
 uccìdiri
 uffriri
@@ -11384,7 +11378,7 @@ valiri
 vanniari
 vantari
 varagnari
-vardari
+var
 variari
 vasari
 vattiari
@@ -11471,7 +11465,7 @@ tìnciri
 tìngiri
 tòrciri
 tùnniri
-uardari
+uar
 ubbidiri
 uccìdiri
 uffriri
@@ -11488,7 +11482,7 @@ valiri
 vanniari
 vantari
 varagnari
-vardari
+var
 variari
 vasari
 vattiari
@@ -11575,7 +11569,7 @@ tìnciri
 tìngiri
 tòrciri
 tùnniri
-uardari
+uar
 ubbidiri
 uccìdiri
 uffriri
@@ -11592,7 +11586,7 @@ valiri
 vanniari
 vantari
 varagnari
-vardari
+var
 variari
 vasari
 vattiari
@@ -11679,7 +11673,7 @@ tìnciri
 tìngiri
 tòrciri
 tùnniri
-uardari
+uar
 ubbidiri
 uccìdiri
 uffriri
@@ -11696,7 +11690,7 @@ valiri
 vanniari
 vantari
 varagnari
-vardari
+var
 variari
 vasari
 vattiari
@@ -11783,7 +11777,7 @@ tìnciri
 tìngiri
 tòrciri
 tùnniri
-uardari
+uar
 ubbidiri
 uccìdiri
 uffriri
@@ -11800,7 +11794,7 @@ valiri
 vanniari
 vantari
 varagnari
-vardari
+var
 variari
 vasari
 vattiari
@@ -11887,7 +11881,7 @@ tìnciri
 tìngiri
 tòrciri
 tùnniri
-uardari
+uar
 ubbidiri
 uccìdiri
 uffriri
@@ -11904,7 +11898,7 @@ valiri
 vanniari
 vantari
 varagnari
-vardari
+var
 variari
 vasari
 vattiari
@@ -11991,7 +11985,7 @@ tìnciri
 tìngiri
 tòrciri
 tùnniri
-uardari
+uar
 ubbidiri
 uccìdiri
 uffriri
@@ -12008,7 +12002,7 @@ valiri
 vanniari
 vantari
 varagnari
-vardari
+var
 variari
 vasari
 vattiari
