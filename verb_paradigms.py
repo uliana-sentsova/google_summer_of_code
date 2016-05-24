@@ -87,7 +87,7 @@ with open("scn.crp.txt", "r", encoding="utf-8") as corpus, open("dictionary.txt"
         corpus = corpus.read()
         dictionary = dictionary.read()
         for verb in all_verbs:
-            # check if verb is not in the sicilian dictionary:
+            # check if word is not in the sicilian dictionary:
             try:
                 if len(verb) > 4 and "lm=\"" + verb not in dictionary:
                     verb = verb.strip()
@@ -100,7 +100,7 @@ with open("scn.crp.txt", "r", encoding="utf-8") as corpus, open("dictionary.txt"
                         verb = verb.replace("ù", "u")
                     entry = "NO ENTRY" + verb
 
-                    # check if the verb is regular or not:
+                    # check if the word is regular or not:
                     if not verb.endswith("iari") and replace_voc(verb):
                         form = replace_voc(verb)
                         if re.search("\W"+form+"\W", corpus):

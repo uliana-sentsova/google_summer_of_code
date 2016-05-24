@@ -2,9 +2,9 @@ import requests
 from lxml import html
 
 count = 0
-with open("sicilian_verbs.txt", "w") as verbs_file, open("translation.txt", "w") as translation_file:
+with open("nouns_list_2.txt", "a") as nouns_file, open("nouns_translations.txt", "a") as translation_file:
 
-    next_link = "https://scn.wiktionary.org/w/index.php?title=Catigur%C3%ACa:Verbi_siciliani&pageuntil=acc%C3%B2gliri#mw-pages"
+    next_link = "https://scn.wiktionary.org/w/index.php?title=Catigur%C3%ACa:Sustantivi_siciliani&pagefrom=palpitazzioni&subcatfrom=A&filefrom=A#mw-pages"
 
     while next_link:
 
@@ -15,7 +15,7 @@ with open("sicilian_verbs.txt", "w") as verbs_file, open("translation.txt", "w")
             response = requests.get(next_link)
             parsed_body = html.fromstring(response.text)
 
-            # Find verbs on the page
+            # Find words on the page
             sicilian = parsed_body.xpath('//ul/li/a/@href')
             for i in range(0, 200):
                 url = "https://scn.wiktionary.org" + sicilian[i]
@@ -23,26 +23,33 @@ with open("sicilian_verbs.txt", "w") as verbs_file, open("translation.txt", "w")
                 parsed = html.fromstring(response.text)
                 first_section = parsed.xpath("//ul/li/a/text()")
                 second_section = parsed.xpath("//dl/dd/a/text()")
+                grammar = parsed.xpath("//div/p/i/text()")
                 if second_section:
                     for part in second_section:
                         first_section.append(part)
-                verb = sicilian[i].split("i/")[1].strip()
+                for s in first_section:
+                    grammar.append(s)
+                word = sicilian[i].split("i/")[1].strip()
 
-                if not verb.endswith("ri") or verb.endswith("si"):
-                    continue
+                # if not word.endswith("ri") or word.endswith("si"):
+                #     continue
 
                 # Replace UTF
-                verb = verb.replace("%C3%AC", "ì")
-                verb = verb.replace("%C3%B2", "ò")
-                verb = verb.replace("%C3%A0", "à")
-                verb = verb.replace("%C3%A8", "è")
-                verb = verb.replace("%C3%B9", "ù")
+                word = word.replace("%C3%AC", "ì")
+                word = word.replace("%C3%B2", "ò")
+                word = word.replace("%C3%A0", "à")
+                word = word.replace("%C3%A8", "è")
+                word = word.replace("%C3%B9", "ù")
+                word = word.replace("%C3%A7", "ç")
+                word = word.replace("%C3%AE", "î")
 
-                verbs_file.write(verb + "\n")
-                translation_file.write(verb + "\t" + ",".join(first_section) + "\n")
+                # print(word)
+
+                nouns_file.write(word + "\n")
+                translation_file.write(word + "\t" + ",".join(grammar) + "\n")
                 count += 1
                 if count%50 == 0:
-                    print(count, "verbs extracted. Last verb:", verb)
+                    print(count, "Words extracted. Last word:", word)
 
             # Look for the next page:
             hrefs_list = parsed_body.xpath('//div/a/@href')
