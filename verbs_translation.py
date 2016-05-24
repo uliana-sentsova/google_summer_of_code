@@ -1,4 +1,3 @@
-from Levenshtein import distance
 entry = '      <e><p><l>SICILIAN<s n="vblex"/></l><r>SPANISH<s n="vblex"/></r></p></e>'
 
 
@@ -27,7 +26,7 @@ with open("scn.crp.txt", 'r', encoding="utf-8") as corpus:
 equivalents = []
 multiple = []
 
-with open("translation.txt", 'r', encoding="utf-8") as translations, open("bilingual_dictionary.txt", "r", encoding="utf-8") as dictionary, open("unmatched.txt", 'w') as unmatched:
+with open("verbs_translations.txt", 'r', encoding="utf-8") as translations, open("bilingual_dictionary.txt", "r", encoding="utf-8") as dictionary, open("unmatched.txt", 'w') as unmatched:
     dictionary = dictionary.read()
     for translation in translations:
         translation = translation.strip().split("\t")
