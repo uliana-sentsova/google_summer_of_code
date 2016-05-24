@@ -12,6 +12,27 @@ parcu = '    <e lm="LEMMA"><i>ROOT</i><par n="parc/u__n"/></e>'
 ripubrica = '    <e lm="LEMMA"><i>ROOT</i><par n="ripùbbric/a__n"/></e>'
 culonia = '    <e lm="LEMMA"><i>ROOT</i><par n="culoni/a__n"/></e>'
 
+annu_form = '    <e lm="LEMMA"><p><l>FORM</l><r>ROOT</r></p><par n="ann/u__n"/></e>'
+tirritoriu_form = '    <e lm="LEMMA"><p><l>FORM</l><r>ROOT</r></p><par n="tirritori/u__n"/></e>'
+casa_form = '    <e lm="LEMMA"><p><l>FORM</l><r>ROOT</r></p><par n="cas/a__n"/></e>'
+oricchia_form = '    <e lm="LEMMA"><p><l>FORM</l><r>ROOT</r></p><par n="oricchi/a__n"/></e>'
+citati_form = '    <e lm="LEMMA"><p><l>FORM</l><r>ROOT</r></p><par n="cit/ati__n"/></e>'
+pupulazzioni_form = '    <e lm="LEMMA"><p><l>FORM</l><r>ROOT</r></p><par n="pupulaz/zioni__n"/></e>'
+parcu_form = '    <e lm="LEMMA"><p><l>FORM</l><r>ROOT</r></p><par n="parc/u__n"/></e>'
+ripubrica_form = '    <e lm="LEMMA"><p><l>FORM</l><r>ROOT</r></p><par n="ripùbbric/u__n"/></e>'
+culonia_form = '    <e lm="LEMMA"><i>ROOT</i><par n="culoni/a__n"/></e>'
+
+
+annu_group = [annu, annu_form, "u"]
+tirritoriu_group = [tirritoriu, tirritoriu_form, "u"]
+casa_group = [casa, casa_form, "a"]
+oricchia_group = [oricchia, oricchia_form, "ia"]
+citati_group = [citati, citati_form, "ati"]
+pupulazzioni_group = [pupulazzioni, pupulazzioni_form, "zioni"]
+parcu_group = [parcu, parcu_form, "u"]
+ripubrica_group = [ripubrica, ripubrica_form, "u"]
+culonia_group = [culonia, culonia_form, "ìa"]
+
 
 # Create tf-idf dictionary
 freq_dictionary = dict()
@@ -57,6 +78,13 @@ def distance(a, b):
 
     return current_row[n]
 
+
+def in_previous(prev, current):
+    for word in current:
+        if word in prev:
+            return word
+    return False
+
 nouns_list = []
 
 
@@ -69,37 +97,61 @@ with open("nouns_translations.txt", 'r', encoding="utf-8") as nouns, open("nouns
 
             translation = line[1].split(",")
             grammar = translation[0:2]
+
+            # Find italian translation:
+
             if len(noun) > 2 and "lm=\"" + noun not in dictionary and grammar[0] != "pl":
 
-                if noun.endswith("cu"):
-                    entry = build_paradigm(noun, parcu, suffix="u")
+                try:
+                    ita_ind = translation.index("talianu")
+                    italian = translation[ita_ind + 1]
+                except ValueError:
+                    continue
 
+                if noun.endswith("cu"):
+                    # entry = build_paradigm(noun, parcu, suffix="u")
+                    parcu_group.append((noun, italian))
                     # print(entry)
                 elif noun.endswith("iu"):
-                    entry = build_paradigm(noun, tirritoriu, suffix = "u")
+                    # entry = build_paradigm(noun, tirritoriu, suffix = "u")
+                    tirritoriu_group.append((noun, italian))
                     # print(entry)
                 elif noun.endswith("ia"):
-                    entry = build_paradigm(noun, oricchia, suffix="ia")
+                    # entry = build_paradigm(noun, oricchia, suffix="ia")
+                    oricchia_group.append((noun, italian))
                     # print(entry)
                 elif noun.endswith("ati"):
-                    entry = build_paradigm(noun, citati, suffix="ati")
+                    # entry = build_paradigm(noun, citati, suffix="ati")
+                    citati_group.append((noun, italian))
                     # print(entry)
                 elif noun.endswith("zioni"):
-                    entry = build_paradigm(noun, pupulazzioni, suffix="zioni")
+                    # entry = build_paradigm(noun, pupulazzioni, suffix="zioni")
+                    pupulazzioni_group.append((noun, italian))
                     # print(entry)
                 elif noun.endswith("ca"):
-                    entry = build_paradigm(noun, ripubrica, suffix="a")
+                    # entry = build_paradigm(noun, ripubrica, suffix="a")
+                    ripubrica_group.append((noun, italian))
                     # print(entry)
                 elif noun.endswith("ìa"):
-                    entry = build_paradigm(noun, culonia, suffix="a")
+                    # entry = build_paradigm(noun, culonia, suffix="a")
+                    culonia_group.append((noun, italian))
                     # print(entry)
-                    nouns_list.append(noun)
-                elif noun.endswith("a"):
-                    pass
+
+                    # --------------------------------
+                    nouns_list.append((noun, italian))
+                    # --------------------------------
+                    
+                elif noun.endswith("a") and "f" in grammar:
+                    casa_group.append((noun, italian))
+                # elif noun.endswith("u") and "m" in grammar and "f" not in grammar:
                 else:
                     pass
 
+all_groups = [tirritoriu_group, casa_group, pupulazzioni_group, parcu_group, ripubrica_group,
+              citati_group, oricchia_group, culonia_group]
 
+
+# Добавить возможность смотреть на итальянский перевод
 def merge_similar(list_of_words, distance_value=1):
     checked_j = []
     checked_i = []
@@ -107,7 +159,7 @@ def merge_similar(list_of_words, distance_value=1):
     list_of_words = list(set(list_of_words))
     for i in range(0, len(list_of_words) - 1):
         for j in range(0, len(list_of_words) - 1):
-            if i != j and list_of_words[j] not in checked_j and list_of_words[j] not in words_forms.keys():
+            if i != j and list_of_words[j] not in checked_j and list_of_words[j] not in checked_i:
                 if distance(list_of_words[i], list_of_words[j]) <= distance_value:
                     if list_of_words[i] not in checked_i:
                         words_forms[list_of_words[i]] = []
@@ -122,12 +174,21 @@ def merge_similar(list_of_words, distance_value=1):
         for form in words_forms[key]:
             group.append(form)
         groups.append(group)
+
+    groups = sorted(groups)
+
+    for word in list_of_words:
+        if word not in checked_i and word not in checked_j:
+            groups.append([word])
     return sorted(groups)
 
+# nouns_list = list(set(nouns_list))
+# checking = merge_similar(nouns_list)
+# for ch in checking:
+#     print(ch)
 
-checking = merge_similar(nouns_list)
-for ch in checking:
-    print(ch)
+
+
 
 
 # matched = []
