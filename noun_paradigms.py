@@ -140,7 +140,7 @@ with open("nouns_translations.txt", 'r', encoding="utf-8") as nouns, open("nouns
                     # --------------------------------
                     nouns_list.append((noun, italian))
                     # --------------------------------
-                    
+
                 elif noun.endswith("a") and "f" in grammar:
                     casa_group.append((noun, italian))
                 # elif noun.endswith("u") and "m" in grammar and "f" not in grammar:
@@ -152,7 +152,7 @@ all_groups = [tirritoriu_group, casa_group, pupulazzioni_group, parcu_group, rip
 
 
 # Добавить возможность смотреть на итальянский перевод
-def merge_similar(list_of_words, distance_value=1):
+def merge_similar(list_of_words, distance_value=3):
     checked_j = []
     checked_i = []
     words_forms = dict()
@@ -160,7 +160,11 @@ def merge_similar(list_of_words, distance_value=1):
     for i in range(0, len(list_of_words) - 1):
         for j in range(0, len(list_of_words) - 1):
             if i != j and list_of_words[j] not in checked_j and list_of_words[j] not in checked_i:
-                if distance(list_of_words[i], list_of_words[j]) <= distance_value:
+
+                italian_i = list_of_words[i][1]
+                italian_j = list_of_words[j][1]
+
+                if distance(list_of_words[i][0], list_of_words[j][0]) <= distance_value and italian_i == italian_j:
                     if list_of_words[i] not in checked_i:
                         words_forms[list_of_words[i]] = []
                     words_forms[list_of_words[i]].append(list_of_words[j])
@@ -183,9 +187,9 @@ def merge_similar(list_of_words, distance_value=1):
     return sorted(groups)
 
 # nouns_list = list(set(nouns_list))
-# checking = merge_similar(nouns_list)
-# for ch in checking:
-#     print(ch)
+checking = merge_similar(nouns_list)
+for ch in checking:
+    print(ch)
 
 
 
