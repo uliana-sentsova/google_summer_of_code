@@ -1,6 +1,108 @@
 import os
 import re
 
+# Building a paradigm with given noun, paradigm and the suffix of the noun which changes during the declination
+def build_paradigm(noun, paradigm, suffix, form=None):
+
+    if form:
+        lemma = form
+        root = lemma[:-len(suffix)]
+        form_root = noun[:-len(suffix)]
+        noun_par = paradigm.replace("ROOT", root)
+        noun_par = noun_par.replace("LEMMA", lemma)
+        noun_par = noun_par.replace("FORM", form_root)
+        return noun_par
+
+    root = noun[:-len(suffix)]
+    noun_par = paradigm.replace("ROOT", root)
+    noun_par = noun_par.replace("LEMMA", noun)
+    return noun_par
+
+
+# Calculating Levenstein distance in order to find similar forms of nouns:
+def distance(a, b):
+    n, m = len(a), len(b)
+    if n > m:
+        # Make sure n <= m, to use O(min(n,m)) space
+        a, b = b, a
+        n, m = m, n
+
+    current_row = range(n+1) # Keep current and previous row, not entire matrix
+    for i in range(1, m+1):
+        previous_row, current_row = current_row, [i]+[0]*n
+        for j in range(1,n+1):
+            add, delete, change = previous_row[j]+1, current_row[j-1]+1, previous_row[j-1]
+            if a[j-1] != b[i-1]:
+                change += 1
+            current_row[j] = min(add, delete, change)
+
+    return current_row[n]
+
+
+# Добавить возможность смотреть на итальянский перевод
+def merge_similar(list_of_words, distance_value=3, without_italian=True):
+    checked_j = []
+    checked_i = []
+    words_forms = dict()
+    list_of_words = list(set(list_of_words))
+    for i in range(0, len(list_of_words) - 1):
+        for j in range(0, len(list_of_words) - 1):
+            if i != j and list_of_words[j] not in checked_j and list_of_words[j] not in checked_i:
+
+                try:
+                    italian_i = list_of_words[i][1]
+                    italian_j = list_of_words[j][1]
+                except IndexError:
+                    print(list_of_words[j], j)
+
+                if len(list_of_words[i][0]) > 7:
+                    distance_value += 1
+
+                if distance(list_of_words[i][0], list_of_words[j][0]) <= distance_value and italian_i == italian_j:
+                    if list_of_words[i] not in checked_i:
+                        words_forms[list_of_words[i]] = []
+                    words_forms[list_of_words[i]].append(list_of_words[j])
+
+                    checked_j.append(list_of_words[j])
+                    checked_i.append(list_of_words[i])
+    groups = []
+    for key in words_forms:
+        group = []
+        group.append(key)
+        for form in words_forms[key]:
+            group.append(form)
+        groups.append(group)
+
+    groups = sorted(groups)
+
+    for word in list_of_words:
+        if word not in checked_i and word not in checked_j:
+            groups.append([word])
+
+    if without_italian:
+        new_group = []
+        for line in groups:
+            temp = []
+            for word in line:
+                if type(word) == tuple:
+                    temp.append(word[0])
+                else:
+                    temp.append(word)
+            new_group.append(temp)
+        return sorted(new_group)
+
+    return sorted(groups)
+
+
+# Looking for the frequency of word in the corpus:
+def find_frequency(word):
+    try:
+        return freq_dictionary[word]
+    except KeyError:
+        return 0
+
+
+
 # Most common noun paradigms
 annu = '    <e lm="LEMMA"><i>ROOT</i><par n="ann/u__n"/></e>'
 tirritoriu = '    <e lm="LEMMA"><i>ROOT</i><par n="tirritori/u__n"/></e>'
@@ -49,43 +151,6 @@ with open("scn.crp.txt", 'r', encoding="utf-8") as corpus:
             for symbol in [".", ',','"', "'", ":", ";", "\"", "!", "?", "=", "-", ")", '(']:
                 word = word.strip(symbol)
             freq_dictionary[word] = freq_dictionary.get(word, 0) + 1
-
-
-# Building a paradigm with given noun, paradigm and the suffix of the noun which changes during the declination
-def build_paradigm(noun, paradigm, suffix):
-    root = noun[:-len(suffix)]
-    noun_par = paradigm.replace("ROOT", root)
-    noun_par = noun_par.replace("LEMMA", noun)
-    return noun_par
-
-
-# Calculating Levenstein distance in order to find similar forms of nouns:
-def distance(a, b):
-    n, m = len(a), len(b)
-    if n > m:
-        # Make sure n <= m, to use O(min(n,m)) space
-        a, b = b, a
-        n, m = m, n
-
-    current_row = range(n+1) # Keep current and previous row, not entire matrix
-    for i in range(1, m+1):
-        previous_row, current_row = current_row, [i]+[0]*n
-        for j in range(1,n+1):
-            add, delete, change = previous_row[j]+1, current_row[j-1]+1, previous_row[j-1]
-            if a[j-1] != b[i-1]:
-                change += 1
-            current_row[j] = min(add, delete, change)
-
-    return current_row[n]
-
-
-def in_previous(prev, current):
-    for word in current:
-        if word in prev:
-            return word
-    return False
-
-nouns_list = []
 
 
 with open("nouns_translations.txt", 'r', encoding="utf-8") as nouns, open("nouns_paradigms.txt", "w") as target_file:
@@ -138,7 +203,7 @@ with open("nouns_translations.txt", 'r', encoding="utf-8") as nouns, open("nouns
                     # print(entry)
 
                     # --------------------------------
-                    nouns_list.append((noun, italian))
+                    # nouns_list.append((noun, italian))
                     # --------------------------------
 
                 elif noun.endswith("a") and "f" in grammar:
@@ -151,82 +216,29 @@ all_groups = [tirritoriu_group, casa_group, pupulazzioni_group, parcu_group, rip
               citati_group, oricchia_group, culonia_group]
 
 
-# Добавить возможность смотреть на итальянский перевод
-def merge_similar(list_of_words, distance_value=3):
-    checked_j = []
-    checked_i = []
-    words_forms = dict()
-    list_of_words = list(set(list_of_words))
-    for i in range(0, len(list_of_words) - 1):
-        for j in range(0, len(list_of_words) - 1):
-            if i != j and list_of_words[j] not in checked_j and list_of_words[j] not in checked_i:
+for group in all_groups[1:3]:
+    merged = merge_similar(group[3:])
 
-                italian_i = list_of_words[i][1]
-                italian_j = list_of_words[j][1]
+    main_paradium = group[0]
+    form_paradigm = group[1]
+    suffix = group[2]
 
-                if distance(list_of_words[i][0], list_of_words[j][0]) <= distance_value and italian_i == italian_j:
-                    if list_of_words[i] not in checked_i:
-                        words_forms[list_of_words[i]] = []
-                    words_forms[list_of_words[i]].append(list_of_words[j])
+    for line in merged:
 
-                    checked_j.append(list_of_words[j])
-                    checked_i.append(list_of_words[i])
-    groups = []
-    for key in words_forms:
-        group = []
-        group.append(key)
-        for form in words_forms[key]:
-            group.append(form)
-        groups.append(group)
+        if len(line) == 1:
+            print(build_paradigm(line[0], main_paradium, suffix))
 
-    groups = sorted(groups)
+        else:
+            frequencies = []
+            for word in line:
+                frequencies.append(find_frequency(word))
+            maximum = max(frequencies)
+            max_ind = frequencies.index(maximum)
+            word = line[max_ind]
 
-    for word in list_of_words:
-        if word not in checked_i and word not in checked_j:
-            groups.append([word])
-    return sorted(groups)
+            print(build_paradigm(line[max_ind], main_paradium, suffix))
 
-# nouns_list = list(set(nouns_list))
-checking = merge_similar(nouns_list)
-for ch in checking:
-    print(ch)
+            del line[max_ind]
 
-
-
-
-
-# matched = []
-# done = []
-# nouns_forms = dict()
-#
-# nouns_list = list(set(nouns_list))
-#
-# for i in range(0, len(nouns_list) - 1):
-#     for j in range(0, len(nouns_list) - 1):
-#         if i != j and nouns_list[j] not in matched:
-#             if distance(nouns_list[i], nouns_list[j]) == 1:
-#
-#                 # print(nouns_list[i], nouns_list[j])
-#                 matched.append(nouns_list[j])
-#
-#                 if nouns_list[i] not in done:
-#                     nouns_forms[nouns_list[i]] = []
-#                 nouns_forms[nouns_list[i]].append(nouns_list[j])
-#
-#                 done.append(nouns_list[i])
-#
-# groups = []
-# for key in nouns_forms:
-#     group = []
-#     group.append(key)
-#     for x in nouns_forms[key]:
-#         group.append(x)
-#     groups.append(group)
-# for g in groups:
-#     print(g)
-
-# for key in nouns_forms:
-#     try:
-#         print(key, freq_dictionary[key], sorted(list(set(nouns_forms[key])), key=lambda l: l[1]))
-#     except KeyError:
-#         print(key, 0, sorted(nouns_forms[key], key=lambda l: l[1]))
+            for l in line:
+                print(build_paradigm(l, form_paradigm, suffix, form=word))
