@@ -132,8 +132,10 @@ for key in groups:
     if gr[-2][1] > 2:
         # print(build_paradigm(gr[-2][0],  key))
         entries.append(build_paradigm(gr[-2][0],  key))
-for line in list(set(entries)):
-    print(line)
+    else:
+        print(gr, key)
+# for line in list(set(entries)):
+#     print(line)
 
 
 # spanish_key = dict()

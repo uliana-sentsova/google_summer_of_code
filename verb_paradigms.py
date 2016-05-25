@@ -12,6 +12,10 @@ nvocari = '\n    <e lm="LEMMA"><p><l>ROOT</l><r>ROOT</r></p><par n="abbint/ari__
     <e lm="LEMMA"><p><l>SECOND</l><r>ROOT</r></p><par n="abbènt/anu__vblex"/></e>\n'
 
 
+parrari
+
+
+
 def is_cons(letter):
     for voc in ["i", "a", "o", "u", "e", "ù", "à", "ò", "ì", "è"]:
         if letter == voc:
