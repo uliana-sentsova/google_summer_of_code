@@ -4,16 +4,24 @@ import re
 # Building a paradigm with given noun, paradigm and the suffix of the noun which changes during the declination
 def build_paradigm(noun, paradigm, suffix, form=None):
 
+    if suffix != "":
+        root = noun[:-len(suffix)]
+    else:
+        root = noun
+
     if form:
         lemma = form
-        root = lemma[:-len(suffix)]
-        form_root = noun[:-len(suffix)]
+        if not suffix:
+            root = lemma
+            form_root = noun
+        else:
+            root = lemma[:-len(suffix)]
+            form_root = noun[:-len(suffix)]
         noun_par = paradigm.replace("ROOT", root)
         noun_par = noun_par.replace("LEMMA", lemma)
         noun_par = noun_par.replace("FORM", form_root)
         return noun_par
 
-    root = noun[:-len(suffix)]
     noun_par = paradigm.replace("ROOT", root)
     noun_par = noun_par.replace("LEMMA", noun)
     return noun_par
@@ -40,7 +48,7 @@ def distance(a, b):
 
 
 # Добавить возможность смотреть на итальянский перевод
-def merge_similar(list_of_words, distance_value=2, without_italian=True):
+def merge_similar(list_of_words, distance_value=3, without_italian=True):
     checked_j = []
     checked_i = []
     words_forms = dict()
@@ -48,17 +56,18 @@ def merge_similar(list_of_words, distance_value=2, without_italian=True):
     for i in range(0, len(list_of_words) - 1):
         for j in range(0, len(list_of_words) - 1):
             if i != j and list_of_words[j] not in checked_j and list_of_words[j] not in checked_i:
+                # print(list_of_words[i], list_of_words[j])
 
                 try:
                     italian_i = list_of_words[i][1]
                     italian_j = list_of_words[j][1]
-                except IndexError:
-                    print(list_of_words[j], j)
+                except IndexError as err:
+                    print(err, "HERE IT IS", list_of_words[j], j, i)
 
                 if len(list_of_words[i][0]) > 7 and len(list_of_words[j][0]) > 7:
-                    distance_value += 1
+                    distance_value = 4
                 if len(list_of_words[i][0]) < 5 and len(list_of_words[j]) < 5:
-                    distance_value -= 1
+                    distance_value = 2
 
                 if distance(list_of_words[i][0], list_of_words[j][0]) <= distance_value and italian_i == italian_j:
                     if list_of_words[i] not in checked_i:
@@ -115,7 +124,11 @@ pupulazzioni = '    <e lm="LEMMA"><i>ROOT</i><par n="pupulaz/zioni__n"/></e>'
 parcu = '    <e lm="LEMMA"><i>ROOT</i><par n="parc/u__n"/></e>'
 ripubrica = '    <e lm="LEMMA"><i>ROOT</i><par n="ripùbbric/a__n"/></e>'
 culonia = '    <e lm="LEMMA"><i>ROOT</i><par n="culoni/a__n"/></e>'
-sucialismu = '    <e lm="LEMMA"><i>WORD</i><par n="sucialism/u__n"/></e>'
+sucialismu = '    <e lm="LEMMA"><i>ROOT</i><par n="sucialism/u__n"/></e>'
+patri = '    <e lm="LEMMA"><i>ROOT</i><par n="patri__n"/></e>'
+matri = '    <e lm="LEMMA"><i>ROOT</i><par n="matri__n"/></e>'
+chitarrista = '    <e lm="LEMMA"><i>ROOT</i><par n="chitarrist/a__n"/></e>'
+pianeta = '    <e lm="LEMMA"><i>ROOT</i><par n="pianet/a__n"/></e>'
 
 annu_form = '    <e lm="LEMMA" r="LR"><p><l>FORM</l><r>ROOT</r></p><par n="ann/u__n"/></e>'
 tirritoriu_form = '    <e lm="LEMMA" r="LR"><p><l>FORM</l><r>ROOT</r></p><par n="tirritori/u__n"/></e>'
@@ -127,6 +140,10 @@ parcu_form = '    <e lm="LEMMA" r="LR"><p><l>FORM</l><r>ROOT</r></p><par n="parc
 ripubrica_form = '    <e lm="LEMMA" r="LR"><p><l>FORM</l><r>ROOT</r></p><par n="ripùbbric/a__n"/></e>'
 culonia_form = '    <e lm="LEMMA" r="LR"><p><l>FORM</l><r>ROOT</r></p><par n="culoni/a__n"/></e>'
 sucialismu_form = '    <e lm="LEMMA" r="LR"><p><l>FORM</l><r>ROOT</r></p><par n="sucialism/u__n"/></e>'
+patri_form = '    <e lm="LEMMA" r="LR"><p><l>FORM</l><r>ROOT</r></p><par n="patri__n"/></e>'
+matri_form = '    <e lm="LEMMA" r="LR"><p><l>FORM</l><r>ROOT</r></p><par n="matri__n"/></e>'
+chitarrista_form = '    <e lm="LEMMA" r="LR"><p><l>FORM</l><r>ROOT</r></p><par n="chitarrist/a__n"/></e>'
+pianeta_form = '    <e lm="LEMMA" r="LR"><p><l>FORM</l><r>ROOT</r></p><par n="pianet/a__n"/></e>'
 
 
 annu_group = [annu, annu_form, "u"]
@@ -139,6 +156,12 @@ parcu_group = [parcu, parcu_form, "u"]
 ripubrica_group = [ripubrica, ripubrica_form, "u"]
 culonia_group = [culonia, culonia_form, "ìa"]
 sucialismu_group = [sucialismu, sucialismu_form, "u"]
+patri_group = [patri, patri_form, ""]
+matri_group = [matri, matri_form, ""]
+chitarrista_group = [chitarrista, chitarrista_form, "a"]
+pianeta_group = [pianeta, pianeta_form, "a"]
+
+
 
 
 # Create tf-idf dictionary
@@ -177,7 +200,7 @@ with open("nouns_translations.txt", 'r', encoding="utf-8") as nouns, open("dicti
             except ValueError:
                 continue
 
-            if noun.endswith("cu"):
+            if noun.endswith("gu"):
                 # entry = build_paradigm(noun, parcu, suffix="u")
                 parcu_group.append((noun, italian))
                 # print(entry)
@@ -212,48 +235,75 @@ with open("nouns_translations.txt", 'r', encoding="utf-8") as nouns, open("dicti
             # elif noun.endswith("u") and "m" in grammar and "f" not in grammar:
             # elif noun.endswith("u") and "m" in grammar:
             #     annu_group.append(noun)
+            elif noun.endswith("mentu") or noun.endswith("ddu") or noun.endswith("ttu"):
+                # print(noun)
+                annu_group.append((noun, italian))
+                # print(noun, italian)
+            elif noun.endswith("u") and "f" not in grammar and len(noun) > 4 and not noun.endswith("gu"):
+                pass
+                # print(noun, italian)
+                # annu_group.append((noun, italian))
+            elif noun.endswith("i") and "m" in grammar and "f" not in grammar:
+                pass
+                # patri_group.append((noun, italian))
+            elif noun.endswith("i") and "f" in grammar and "m" not in grammar:
+                pass
+                # matri_group.append((noun, italian))
+            elif noun.endswith("ista"):
+                chitarrista_group.append((noun, italian))
+            elif (noun.endswith("ma") or noun.endswith("ta")) and "m" in grammar:
+                pianeta_group.append((noun, italian))
+            elif noun.endswith("tà") and "f" in grammar:
+                matri_group.append((noun, italian))
+            elif "lingua" in italian:
+                patri_group.append((noun, italian))
             else:
                 other.write(noun + "\t" + ",".join(translation) + "\n")
-
-all_groups = [sucialismu_group, casa_group, pupulazzioni_group, parcu_group, ripubrica_group,
-              citati_group, oricchia_group, culonia_group, tirritoriu_group]
+                print(noun, italian)
 
 
-with open("nouns_paradigms.txt", "w") as target_file, open("nouns_to_translate.txt", 'w') as translation_list:
-    gr_count = 0
-    for group in all_groups:
-        count = 0
-        merged = merge_similar(group[3:])
 
-        main_paradium = group[0]
-        form_paradigm = group[1]
-        suffix = group[2]
-
-        for line in merged:
-
-            if len(line) == 1:
-                entry = build_paradigm(line[0], main_paradium, suffix)
-                # print()
-                target_file.write(entry + "\n")
-                translation_list.write(line[0] + "\n")
-
-            else:
-                frequencies = []
-                for word in line:
-                    frequencies.append(find_frequency(word))
-                maximum = max(frequencies)
-                max_ind = frequencies.index(maximum)
-                word = line[max_ind]
-
-                entry = build_paradigm(word, main_paradium, suffix)
-                translation_list.write(word + "\n")
-
-                del line[max_ind]
-
-                for l in line:
-                    entry = build_paradigm(l, form_paradigm, suffix, form=word)
-                    target_file.write(entry + "\n")
-                count += 1
-                if count%10 == 0:
-                    print("Обработано", count, "слов из группы", gr_count)
-        gr_count += 1
+all_groups = [patri_group]
+# other = [chitarrista_group, pianeta_group, sucialismu_group, casa_group, pupulazzioni_group, parcu_group, ripubrica_group,
+#               citati_group, oricchia_group, culonia_group, tirritoriu_group]
+#
+# #
+# with open("nouns_paradigms_patr.txt", "w") as target_file, open("nouns_to_translate_patri.txt", 'w') as translation_list:
+#     gr_count = 0
+#     for group in all_groups:
+#         count = 0
+#         merged = merge_similar(group[3:])
+#
+#         main_paradium = group[0]
+#         form_paradigm = group[1]
+#         suffix = group[2]
+#
+#         for line in merged:
+#
+#             if len(line) == 1:
+#                 entry = build_paradigm(line[0], main_paradium, suffix)
+#                 # print()
+#                 target_file.write(entry + "\n")
+#                 translation_list.write(line[0] + "\n")
+#
+#             else:
+#                 frequencies = []
+#                 for word in line:
+#                     frequencies.append(find_frequency(word))
+#                 maximum = max(frequencies)
+#                 max_ind = frequencies.index(maximum)
+#                 word = line[max_ind]
+#
+#                 entry = build_paradigm(word, main_paradium, suffix)
+#                 target_file.write(entry + "\n")
+#                 translation_list.write(word + "\n")
+#
+#                 del line[max_ind]
+#
+#                 for l in line:
+#                     entry = build_paradigm(l, form_paradigm, suffix, form=word)
+#                     target_file.write(entry + "\n")
+#                 count += 1
+#                 if count%10 == 0:
+#                     print("Обработано", count, "слов из группы", gr_count)
+#         gr_count += 1

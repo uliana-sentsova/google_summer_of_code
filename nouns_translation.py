@@ -104,6 +104,14 @@ with open("nouns_translations.txt", 'r', encoding="utf-8") as translations:
                                     # entries.append(entry)
                                 else:
                                     unmatched.append((noun, spanish))
+            else:
+                # print(noun, italian)
+                if len(italian.split(" ")) == 1:
+                    if "f" in grammar:
+                        entry = fm.replace("SICILIAN", noun)
+                        # print(entry, italian)
+                else:
+                    print(noun, '-',  italian)
 
 
 
@@ -113,5 +121,5 @@ with open("nouns_translations.txt", 'r', encoding="utf-8") as translations:
 #
 # print("--------")
 #
-for u in unmatched:
-    print(u)
+# for u in unmatched:
+#     print(u)

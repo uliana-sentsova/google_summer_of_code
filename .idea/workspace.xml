@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ab69e95d-3450-43ce-a993-84ae1a6a75b3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nouns_paradigms.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nouns_translation.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noun_paradigms.py" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nouns_no_translation.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nouns_paradigms.txt" afterPath="$PROJECT_DIR$/nouns_paradigms.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/verb_paradigms.py" afterPath="$PROJECT_DIR$/verb_paradigms.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/verbs_translation.py" afterPath="$PROJECT_DIR$/verbs_translation.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nouns_paradigms.py" afterPath="$PROJECT_DIR$/nouns_paradigms.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nouns_translation.py" afterPath="$PROJECT_DIR$/nouns_translation.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nouns_without_paradigm.txt" afterPath="$PROJECT_DIR$/nouns_without_paradigm.txt" />
     </list>
     <ignored path="google_summer_of_code.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,31 +27,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="nouns_paradigms.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="nouns_paradigms.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/nouns_paradigms.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="173" column="0" selection-start-line="173" selection-start-column="0" selection-end-line="177" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="verbs_translation.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/verbs_translation.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="56" column="29" selection-start-line="41" selection-start-column="0" selection-end-line="56" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="nouns_translation.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/nouns_translation.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8499096">
-              <caret line="115" column="0" selection-start-line="115" selection-start-column="0" selection-end-line="116" selection-end-column="12" />
+            <state vertical-scroll-proportion="0.9468085">
+              <caret line="308" column="23" selection-start-line="270" selection-start-column="2" selection-end-line="308" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -85,14 +63,17 @@
         <option value="$PROJECT_DIR$/verbs_list.txt" />
         <option value="$PROJECT_DIR$/nouns_translations.txt" />
         <option value="$PROJECT_DIR$/nouns_without_paradigm" />
-        <option value="$PROJECT_DIR$/nouns_without_paradigm.txt" />
         <option value="$PROJECT_DIR$/nouns_paradigms.txt" />
         <option value="$PROJECT_DIR$/noun_paradigms.py" />
         <option value="$PROJECT_DIR$/verbs_translation.py" />
         <option value="$PROJECT_DIR$/verb_paradigms.py" />
         <option value="$PROJECT_DIR$/nouns_paradigms_copy.py" />
-        <option value="$PROJECT_DIR$/nouns_paradigms.py" />
+        <option value="$PROJECT_DIR$/nouns_no_translation.txt" />
         <option value="$PROJECT_DIR$/nouns_translation.py" />
+        <option value="$PROJECT_DIR$/nouns_handler.py" />
+        <option value="$PROJECT_DIR$/nouns_without_paradigm.txt" />
+        <option value="$PROJECT_DIR$/nouns_paradigms_patr.txt" />
+        <option value="$PROJECT_DIR$/nouns_paradigms.py" />
       </list>
     </option>
   </component>
@@ -125,6 +106,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -146,13 +128,12 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Learning/Course_Work" />
     <property name="FullScreen" value="true" />
   </component>
   <component name="RecentsManager">
@@ -160,7 +141,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.nouns_translation">
+  <component name="RunManager" selected="Python.noun_paradigms">
     <configuration default="false" name="scraper" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -377,8 +358,8 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.nouns_translation" />
-        <item index="1" class="java.lang.String" itemvalue="Python.noun_paradigms" />
+        <item index="0" class="java.lang.String" itemvalue="Python.noun_paradigms" />
+        <item index="1" class="java.lang.String" itemvalue="Python.nouns_translation" />
         <item index="2" class="java.lang.String" itemvalue="Python.nouns_paradigms_copy" />
         <item index="3" class="java.lang.String" itemvalue="Python.verbs_translation" />
         <item index="4" class="java.lang.String" itemvalue="Python.scraper" />
@@ -400,15 +381,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24947146" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32932693" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32932693" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32932693" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30168268" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28674698" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32932693" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -418,6 +398,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32932693" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -437,17 +418,15 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/verb_paradigms.py">
+    <entry file="file://$PROJECT_DIR$/nouns_paradigms.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="156" column="30" selection-start-line="156" selection-start-column="0" selection-end-line="157" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#9#0" expanded="false" />
-          </folding>
+          <caret line="128" column="34" selection-start-line="128" selection-start-column="34" selection-end-line="128" selection-end-column="34" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/entries.txt">
+    <entry file="file://$PROJECT_DIR$/nouns_paradigms_patr.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -455,11 +434,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/verb_paradigms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="156" column="30" selection-start-line="156" selection-start-column="0" selection-end-line="157" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/entries.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/dictionary.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.42607003">
           <caret line="4824" column="0" selection-start-line="4824" selection-start-column="0" selection-end-line="4824" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -467,7 +459,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-4.6666665">
           <caret line="184" column="23" selection-start-line="184" selection-start-column="15" selection-end-line="184" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -475,9 +466,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="58" column="5" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
-          <folding>
-            <element signature="e#0#15#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -485,7 +473,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.0">
           <caret line="0" column="819" selection-start-line="0" selection-start-column="819" selection-end-line="0" selection-end-column="819" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -493,7 +480,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.03768844">
           <caret line="15073" column="21" selection-start-line="15073" selection-start-column="21" selection-end-line="15073" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -501,7 +487,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="5.5895524">
           <caret line="12056" column="7" selection-start-line="12056" selection-start-column="7" selection-end-line="12056" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -509,7 +494,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="3.6679103">
           <caret line="1274" column="26" selection-start-line="1274" selection-start-column="26" selection-end-line="1274" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -517,15 +501,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="231.0061">
           <caret line="7577" column="4" selection-start-line="7577" selection-start-column="4" selection-end-line="7577" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nouns_without_paradigm.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="355.0">
-          <caret line="755" column="9" selection-start-line="755" selection-start-column="0" selection-end-line="755" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -533,15 +508,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.21341464">
           <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nouns_paradigms.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-28.832685">
-          <caret line="232" column="44" selection-start-line="232" selection-start-column="44" selection-end-line="232" selection-end-column="44" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -549,38 +515,74 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="6" column="47" selection-start-line="6" selection-start-column="47" selection-end-line="6" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/verbs_translation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.41093475">
+          <caret line="56" column="29" selection-start-line="41" selection-start-column="0" selection-end-line="56" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nouns_translation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.55026454">
+          <caret line="114" column="0" selection-start-line="114" selection-start-column="0" selection-end-line="114" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nouns_no_translation.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.07936508">
+          <caret line="3" column="53" selection-start-line="3" selection-start-column="53" selection-end-line="3" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nouns_paradigms.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.28089887">
+          <caret line="204" column="0" selection-start-line="204" selection-start-column="0" selection-end-line="263" selection-end-column="85" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nouns_without_paradigm.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="579" column="10" selection-start-line="579" selection-start-column="10" selection-end-line="579" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/nouns_to_translate.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.37937742">
+        <state vertical-scroll-proportion="0.0">
           <caret line="13" column="6" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nouns_to_translate_patri.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.43307087">
+          <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nouns_paradigms_patr.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.10638298">
+          <caret line="4" column="33" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/nouns_paradigms.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="173" column="0" selection-start-line="173" selection-start-column="0" selection-end-line="177" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/verbs_translation.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="56" column="29" selection-start-line="41" selection-start-column="0" selection-end-line="56" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nouns_translation.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8499096">
-          <caret line="115" column="0" selection-start-line="115" selection-start-column="0" selection-end-line="116" selection-end-column="12" />
+        <state vertical-scroll-proportion="0.9468085">
+          <caret line="308" column="23" selection-start-line="270" selection-start-column="2" selection-end-line="308" selection-end-column="23" />
           <folding />
         </state>
       </provider>
