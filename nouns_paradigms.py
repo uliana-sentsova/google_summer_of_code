@@ -1,7 +1,7 @@
 import os
 import re
 
-# Building a paradigm with given verb, paradigm and the suffix of the verb which changes during the declination
+# Building a paradigm with given adj, paradigm and the suffix of the adj which changes during the declination
 def build_paradigm(noun, paradigm, suffix, form=None):
 
     if suffix != "":
@@ -114,7 +114,7 @@ def find_frequency(word):
 
 
 
-# Most common verb paradigms
+# Most common adj paradigms
 annu = '    <e lm="LEMMA"><i>ROOT</i><par n="ann/u__n"/></e>'
 tirritoriu = '    <e lm="LEMMA"><i>ROOT</i><par n="tirritori/u__n"/></e>'
 casa = '    <e lm="LEMMA"><i>ROOT</i><par n="cas/a__n"/></e>'

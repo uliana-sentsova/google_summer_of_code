@@ -1,27 +1,27 @@
 import re
 
-paradigm = '      <e><p><l>SICILIAN<s n="vblex"/></l><r>SPANISH<s n="vblex"/></r></p></e>'
+paradigm = '      <e><p><l>SICILIAN<s n="adj"/></l><r>SPANISH<s n="adj"/></r></p></e>'
 
 
-verbs = []
-with open("verbs_to_translate.txt", 'r', encoding="utf-8") as verbs_file, open("scn-spa_dix.txt") as dictionary:
+adjs = []
+with open("adj_to_translate.txt", 'r', encoding="utf-8") as adj_file, open("scn-spa_dix.txt") as dictionary:
     dictionary = dictionary.read()
-    for verb in verbs_file:
-        verb = verb.strip()
-        if ">" + verb + "<" not in dictionary:
-            verbs.append(verb)
+    for adj in adj_file:
+        adj = adj.strip()
+        if ">" + adj + "<" not in dictionary and adj.isalpha():
+            adjs.append(adj)
 
-verbs = list(set(verbs))
+adjs = list(set(adjs))
 
 entries = []
 unmatched = []
-with open("verbs_translations.txt", 'r', encoding="utf-8") as translations, open("ita-spa_dix.txt") as ita_dic:
+with open("adj_translations.txt", 'r', encoding="utf-8") as translations, open("ita-spa_dix.txt") as ita_dic:
     ita_dic = ita_dic.read()
     for line in translations:
         line = line.split("\t")
-        verb = line[0].strip()
+        adj = line[0].strip()
         translation = line[1].strip().split(",")
-        if verb in verbs:
+        if adj in adjs:
 
             ita_ind = translation.index("talianu")
             italian = translation[ita_ind + 1]
@@ -46,25 +46,25 @@ with open("verbs_translations.txt", 'r', encoding="utf-8") as translations, open
                 pass
             if spanish:
                 if len(spanish[0].split()) == 1:
-                    entry = paradigm.replace("SICILIAN", verb)
+                    entry = paradigm.replace("SICILIAN", adj)
                     entry = entry.replace("SPANISH", spanish[0])
                     entries.append(entry)
                 else:
                     if italian:
-                        x = re.findall("\s.+>" + italian + "<s n=\"v", ita_dic)
+                        x = re.findall("\s.+>" + italian + "<s n=\"a", ita_dic)
                         if x:
                             try:
-                                spanish = re.findall("<l>(\w+?)<s n=\"v", x[0])[0].strip()
+                                spanish = re.findall("<l>(\w+?)<s n=\"a", x[0])[0].strip()
                             except IndexError:
-                                unmatched.append((verb, italian))
-                                print(re.findall("<l>(\w+?)<s n=\"v", x[0]))
+                                unmatched.append((adj, italian))
+                                print(re.findall("<l>(\w+?)<s n=\"a", x[0]))
                             if spanish:
-                                entry = paradigm.replace("SICILIAN", verb)
+                                entry = paradigm.replace("SICILIAN", adj)
                                 entry = entry.replace("SPANISH", spanish)
                             else:
-                                unmatched.append((verb, italian))
+                                unmatched.append((adj, italian))
                     else:
-                        print(verb)
+                        print(adj)
 
 entries = sorted(list(set(entries)))
 for e in entries:

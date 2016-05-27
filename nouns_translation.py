@@ -26,11 +26,11 @@ with open("nouns_translations.txt", 'r', encoding="utf-8") as translations, open
         translation = line[1].strip().split(",")
         grammar = translation[:3]
         if noun in nouns:
-            # print(verb, translation)
+            # print(adj, translation)
 
             ita_ind = translation.index("talianu")
             italian = translation[ita_ind + 1]
-            # print(verb, italian)
+            # print(adj, italian)
 
             if italian:
                 x = re.findall("\s.+>" + italian + "<s n=\"n", ita_dic)
@@ -106,29 +106,29 @@ for u in unmatched:
             #         if "f" in grammar:
             #             if (spanish.endswith("a") or spanish.endswith("ión") or spanish.endswith("ad") or
             #                     spanish.endswith("én") or spanish.endswith("ez")):
-            #                 entry = ff.replace("SICILIAN", verb)
+            #                 entry = ff.replace("SICILIAN", adj)
             #                 entry = entry.replace("SPANISH", spanish)
             #                 # entries.append(entry)
             #             else:
             #                 if not spanish.endswith("s"):
-            #                     entry = fm.replace("SICILIAN", verb)
+            #                     entry = fm.replace("SICILIAN", adj)
             #                     entry = entry.replace("SPANISH", spanish)
             #                     # entries.append(entry)
             #                 else:
-            #                     unmatched.append((verb, spanish))
+            #                     unmatched.append((adj, spanish))
             #         else:
             #             if (spanish.endswith("a") or spanish.endswith("ión") or spanish.endswith("ad") or
             #                     spanish.endswith("én") or spanish.endswith("ez")):
-            #                 entry = mf.replace("SICILIAN", verb)
+            #                 entry = mf.replace("SICILIAN", adj)
             #                 entry = entry.replace("SPANISH", spanish)
             #                 # entries.append(entry)
             #             else:
             #                 if not spanish.endswith("s"):
-            #                     entry = mm.replace("SICILIAN", verb)
+            #                     entry = mm.replace("SICILIAN", adj)
             #                     entry = entry.replace("SPANISH", spanish)
             #                     # entries.append(entry)
             #                 else:
-            #                     unmatched.append((verb, spanish))
+            #                     unmatched.append((adj, spanish))
             #     else:
             #         if type(spanish) == str:
             #             spanish = [spanish]
@@ -137,40 +137,40 @@ for u in unmatched:
             #             if "f" in grammar:
             #                 if (spanish.endswith("a") or spanish.endswith("ión") or spanish.endswith("ad") or
             #                         spanish.endswith("én") or spanish.endswith("ez")):
-            #                     entry = ff.replace("SICILIAN", verb)
+            #                     entry = ff.replace("SICILIAN", adj)
             #                     entry = entry.replace("SPANISH", spanish)
             #                     entries.append(entry)
             #                 else:
             #                     if not spanish.endswith("s"):
-            #                         entry = fm.replace("SICILIAN", verb)
+            #                         entry = fm.replace("SICILIAN", adj)
             #                         entry = entry.replace("SPANISH", spanish)
             #                         entries.append(entry)
             #                     else:
-            #                         unmatched.append((verb, spanish))
+            #                         unmatched.append((adj, spanish))
             #             else:
             #                 if (spanish.endswith("a") or spanish.endswith("ión") or spanish.endswith("ad") or
             #                         spanish.endswith("én") or spanish.endswith("ez")):
-            #                     entry = mf.replace("SICILIAN", verb)
+            #                     entry = mf.replace("SICILIAN", adj)
             #                     entry = entry.replace("SPANISH", spanish)
             #                     entries.append(entry)
             #                 else:
             #                     if not spanish.endswith("s"):
-            #                         entry = mm.replace("SICILIAN", verb)
+            #                         entry = mm.replace("SICILIAN", adj)
             #                         entry = entry.replace("SPANISH", spanish)
             #                         entries.append(entry)
             #                     else:
-            #                         unmatched.append((verb, spanish))
+            #                         unmatched.append((adj, spanish))
             # else:
-            #     print(verb, italian)
+            #     print(adj, italian)
             #     if len(italian.split(" ")) == 1:
             #         if "f" in grammar:
-            #             entry = fm.replace("SICILIAN", verb)
+            #             entry = fm.replace("SICILIAN", adj)
             #             # entries.append(entry)
             #
             #             # print(entry, italian)
             #     else:
             #         pass
-            #         # print(verb, '-',  italian)
+            #         # print(adj, '-',  italian)
 
 
 

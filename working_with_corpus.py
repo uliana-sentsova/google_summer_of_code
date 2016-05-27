@@ -29,6 +29,9 @@ casa = '    <e lm="LEMMA"><i>ROOT</i><par n="cas/a__n"/></e>'
 mancari = '    <e lm="LEMMA"><i>ROOT</i><par n="manc/ari__vblex"/></e>'
 parrari = '    <e lm="LEMMA"><i>ROOT</i><par n="parr/ari__vblex"/></e>'
 battiri = '    <e lm="LEMMA"><i>ROOT</i><par n="batt/iri__vblex"/></e>'
+filusufia = '    <e lm="LEMMA"><i>ROOT</i><par n="filusuf/ìa__n"/></e>'
+tirritoriu = '    <e lm="LEMMA"><i>ROOT</i><par n="tirritori/u__n"/></e>'
+
 
 freq_dictionary = dict()
 
@@ -47,10 +50,12 @@ with open("scn.crp.txt", 'r', encoding="utf-8") as corpus:
                 for symbol in [".", ',','"', "'", ":", "\"", ";", "\"", "!", "?", "=", "-", ")", '(']:
                     word = word.strip(symbol)
                 freq_dictionary[word] = freq_dictionary.get(word, 0) + 1
-
+entries = []
 with open("scn_dix.txt", 'r', encoding="utf-8") as dictionary:
     dictionary = dictionary.read()
     for key in freq_dictionary:
-        if key.endswith("eddu") and "lm=\"" + key not in dictionary and ">" + key[:-len("a")] + "<" not in dictionary:
-            if freq_dictionary[key] > 2:
-                print(build_paradigm(key, casa, "a"))
+        if key.endswith("iu") and "lm=\"" + key not in dictionary:
+            if freq_dictionary[key] > 5:
+                entries.append(build_paradigm(key, tirritoriu, "u"))
+for e in sorted(entries):
+    print(e)

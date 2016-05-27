@@ -27,6 +27,8 @@ with open("adj_translations.txt", "a") as translation_file:
                 if second_section:
                     for part in second_section:
                         first_section.append(part)
+                for f in first_section:
+                    grammar.append(f)
                 word = sicilian[i].split("i/")[1].strip()
 
                 # if not word.endswith("ri") or word.endswith("si"):
@@ -43,7 +45,7 @@ with open("adj_translations.txt", "a") as translation_file:
 
                 # print(word)
 
-                translation_file.write(word + "\t" + ",".join(first_section) + "\n")
+                translation_file.write(word + "\t" + ",".join(grammar) + "\n")
                 count += 1
                 if count%50 == 0:
                     print(count, "Words extracted. Last word:", word)

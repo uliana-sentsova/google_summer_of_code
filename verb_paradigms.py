@@ -213,7 +213,7 @@ with open("verbs_translations.txt", "r", encoding="utf-8") as verbs_file, open("
                     ita_ind = translation.index("talianu")
                     italian = translation[ita_ind + 1]
                 except ValueError:
-                    # print("NONE", verb)
+                    # print("NONE", adj)
                     continue
 
                 if verb.endswith("si"):
@@ -312,71 +312,71 @@ all_groups = [parrari_group, mancari_group, battiri_group]
 # with open("scn.crp.txt", "r", encoding="utf-8") as corpus, open("scn_dix.txt", 'r', encoding="utf-8") as dictionary, open("entries.txt", 'w') as entries_file:
 #         corpus = corpus.read()
 #         dictionary = dictionary.read()
-#         for verb in all_verbs:
+#         for adj in all_verbs:
 #             # check if word is not in the sicilian dictionary:
 #             try:
-#                 if len(verb) > 4 and "lm=\"" + verb not in dictionary:
-#                     verb = verb.strip()
-#                     if verb.endswith("si"):
-#                         verb = verb[:-2]
-#                         verb = verb.replace("ì", "i")
-#                         verb = verb.replace("ò", "o")
-#                         verb = verb.replace("à", "a")
-#                         verb = verb.replace("è", "e")
-#                         verb = verb.replace("ù", "u")
-#                     entry = "NO ENTRY" + verb
+#                 if len(adj) > 4 and "lm=\"" + adj not in dictionary:
+#                     adj = adj.strip()
+#                     if adj.endswith("si"):
+#                         adj = adj[:-2]
+#                         adj = adj.replace("ì", "i")
+#                         adj = adj.replace("ò", "o")
+#                         adj = adj.replace("à", "a")
+#                         adj = adj.replace("è", "e")
+#                         adj = adj.replace("ù", "u")
+#                     entry = "NO ENTRY" + adj
 #
 #                     # check if the word is regular or not:
-#                     if not verb.endswith("iari") and replace_voc(verb):
-#                         form = replace_voc(verb)
+#                     if not adj.endswith("iari") and replace_voc(adj):
+#                         form = replace_voc(adj)
 #                         if re.search("\W"+form+"\W", corpus):
 #
 #                             # find root, first form (singular) and second form (plural)
-#                             root = verb[:-3]
+#                             root = adj[:-3]
 #                             first_form = form[:-1]
-#                             second_form = replace_voc(verb, search=False)
+#                             second_form = replace_voc(adj, search=False)
 #
 #                             # check consonant
 #                             if root.endswith("c") or root.endswith("g"):
-#                                 entry = nvocari.replace("LEMMA", verb)
+#                                 entry = nvocari.replace("LEMMA", adj)
 #                                 entry = entry.replace("ROOT", root)
 #                                 entry = entry.replace("FIRST", first_form)
 #                                 entry = entry.replace("SECOND", second_form)
 #                             else:
-#                                 entry = abbintari.replace("LEMMA", verb)
+#                                 entry = abbintari.replace("LEMMA", adj)
 #                                 entry = entry.replace("ROOT", root)
 #                                 entry = entry.replace("FIRST", first_form)
 #                                 entry = entry.replace("SECOND", second_form)
 #                             # READY!!!
 #                             # print(entry)
 #                         else:
-#                             if verb.endswith("ari"):
-#                                 if verb.endswith("cari"):
-#                                     entry = build_paradigm(verb, mancari)
+#                             if adj.endswith("ari"):
+#                                 if adj.endswith("cari"):
+#                                     entry = build_paradigm(adj, mancari)
 #                                 else:
-#                                     entry = build_paradigm(verb, parrari)
-#                             elif verb.endswith("iri"):
-#                                 entry = build_paradigm(verb, battiri)
+#                                     entry = build_paradigm(adj, parrari)
+#                             elif adj.endswith("iri"):
+#                                 entry = build_paradigm(adj, battiri)
 #                             else:
-#                                 print("NO PARADIMG", verb)
+#                                 print("NO PARADIMG", adj)
 #                     else:
-#                         if verb.endswith("ari"):
-#                             if verb.endswith("cari"):
-#                                 entry = build_paradigm(verb, mancari)
+#                         if adj.endswith("ari"):
+#                             if adj.endswith("cari"):
+#                                 entry = build_paradigm(adj, mancari)
 #                             else:
-#                                 entry = build_paradigm(verb, parrari)
-#                         elif verb.endswith("iri"):
-#                             entry = build_paradigm(verb, battiri)
+#                                 entry = build_paradigm(adj, parrari)
+#                         elif adj.endswith("iri"):
+#                             entry = build_paradigm(adj, battiri)
 #                         else:
-#                             print("NO PARADIMG", verb)
+#                             print("NO PARADIMG", adj)
 #                     # print(entry)
 #                     if "NO " not in entry:
 #                         entries_file.write(entry + "\n")
 #             except Exception as err:
-#                 print(err, verb)
+#                 print(err, adj)
 #             count += 1
 #             if count%100 == 0:
-#                 print("Analyzed", count, "verbs.")
+#                 print("Analyzed", count, "adjs.")
 #
 # with open("entries.txt", 'r') as new_entries, open("scn_dix.txt", 'a', encoding="utf-8") as dictionary:
 #     dictionary.write("\n")
