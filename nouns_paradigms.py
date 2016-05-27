@@ -1,7 +1,7 @@
 import os
 import re
 
-# Building a paradigm with given noun, paradigm and the suffix of the noun which changes during the declination
+# Building a paradigm with given verb, paradigm and the suffix of the verb which changes during the declination
 def build_paradigm(noun, paradigm, suffix, form=None):
 
     if suffix != "":
@@ -114,7 +114,7 @@ def find_frequency(word):
 
 
 
-# Most common noun paradigms
+# Most common verb paradigms
 annu = '    <e lm="LEMMA"><i>ROOT</i><par n="ann/u__n"/></e>'
 tirritoriu = '    <e lm="LEMMA"><i>ROOT</i><par n="tirritori/u__n"/></e>'
 casa = '    <e lm="LEMMA"><i>ROOT</i><par n="cas/a__n"/></e>'
@@ -181,7 +181,7 @@ with open("scn.crp.txt", 'r', encoding="utf-8") as corpus:
             freq_dictionary[word] = freq_dictionary.get(word, 0) + 1
 
 
-with open("nouns_translations.txt", 'r', encoding="utf-8") as nouns, open("dictionary.txt", 'r', encoding="utf-8") as dictionary, open("nouns_without_paradigm.txt", "w") as other:
+with open("nouns_translations.txt", 'r', encoding="utf-8") as nouns, open("scn_dix.txt", 'r', encoding="utf-8") as dictionary, open("nouns_without_paradigm.txt", "w") as other:
     dictionary = dictionary.read()
     for line in nouns:
         line = line.strip().split("\t")
@@ -201,109 +201,109 @@ with open("nouns_translations.txt", 'r', encoding="utf-8") as nouns, open("dicti
                 continue
 
             if noun.endswith("gu"):
-                # entry = build_paradigm(noun, parcu, suffix="u")
                 parcu_group.append((noun, italian))
-                # print(entry)
+
             elif noun.endswith("iu"):
-                # entry = build_paradigm(noun, tirritoriu, suffix = "u")
                 tirritoriu_group.append((noun, italian))
-                # print(entry)
+
             elif noun.endswith("ia"):
-                # entry = build_paradigm(noun, oricchia, suffix="ia")
                 oricchia_group.append((noun, italian))
-                # print(entry)
+
             elif noun.endswith("ati"):
-                # entry = build_paradigm(noun, citati, suffix="ati")
                 citati_group.append((noun, italian))
-                # print(entry)
+
             elif noun.endswith("zioni"):
-                # entry = build_paradigm(noun, pupulazzioni, suffix="zioni")
                 pupulazzioni_group.append((noun, italian))
-                # print(entry)
+
             elif noun.endswith("ca"):
-                # entry = build_paradigm(noun, ripubrica, suffix="a")
                 ripubrica_group.append((noun, italian))
-                # print(entry)
+
             elif noun.endswith("ìa"):
-                # entry = build_paradigm(noun, culonia, suffix="a")
                 culonia_group.append((noun, italian))
+
             elif noun.endswith("ismu"):
                 sucialismu_group.append((noun, italian))
-                # print(entry)
+
             elif noun.endswith("a") and "f" in grammar and "m" not in grammar:
                 casa_group.append((noun, italian))
-            # elif noun.endswith("u") and "m" in grammar and "f" not in grammar:
-            # elif noun.endswith("u") and "m" in grammar:
-            #     annu_group.append(noun)
+
             elif noun.endswith("mentu") or noun.endswith("ddu") or noun.endswith("ttu"):
-                # print(noun)
                 annu_group.append((noun, italian))
-                # print(noun, italian)
+
             elif noun.endswith("u") and "f" not in grammar and len(noun) > 4 and not noun.endswith("gu"):
-                pass
-                # print(noun, italian)
-                # annu_group.append((noun, italian))
+                annu_group.append((noun, italian))
+
             elif noun.endswith("i") and "m" in grammar and "f" not in grammar:
-                pass
-                # patri_group.append((noun, italian))
+                patri_group.append((noun, italian))
+
             elif noun.endswith("i") and "f" in grammar and "m" not in grammar:
-                pass
-                # matri_group.append((noun, italian))
+                matri_group.append((noun, italian))
+
             elif noun.endswith("ista"):
                 chitarrista_group.append((noun, italian))
-            elif (noun.endswith("ma") or noun.endswith("ta")) and "m" in grammar:
+
+            elif noun.endswith("a") and "m" in grammar:
                 pianeta_group.append((noun, italian))
+
             elif noun.endswith("tà") and "f" in grammar:
                 matri_group.append((noun, italian))
+
             elif "lingua" in italian:
                 patri_group.append((noun, italian))
+
+            elif noun.endswith("u") and "m" in grammar:
+                annu_group.append((noun, italian))
+
             else:
                 other.write(noun + "\t" + ",".join(translation) + "\n")
-                print(noun, italian)
+                try:
+                    print(noun, freq_dictionary[noun], grammar)
+                except ValueError:
+                    pass
+                except KeyError:
+                    pass
 
 
 
-all_groups = [patri_group]
-# other = [chitarrista_group, pianeta_group, sucialismu_group, casa_group, pupulazzioni_group, parcu_group, ripubrica_group,
-#               citati_group, oricchia_group, culonia_group, tirritoriu_group]
-#
-# #
-# with open("nouns_paradigms_patr.txt", "w") as target_file, open("nouns_to_translate_patri.txt", 'w') as translation_list:
-#     gr_count = 0
-#     for group in all_groups:
-#         count = 0
-#         merged = merge_similar(group[3:])
-#
-#         main_paradium = group[0]
-#         form_paradigm = group[1]
-#         suffix = group[2]
-#
-#         for line in merged:
-#
-#             if len(line) == 1:
-#                 entry = build_paradigm(line[0], main_paradium, suffix)
-#                 # print()
-#                 target_file.write(entry + "\n")
-#                 translation_list.write(line[0] + "\n")
-#
-#             else:
-#                 frequencies = []
-#                 for word in line:
-#                     frequencies.append(find_frequency(word))
-#                 maximum = max(frequencies)
-#                 max_ind = frequencies.index(maximum)
-#                 word = line[max_ind]
-#
-#                 entry = build_paradigm(word, main_paradium, suffix)
-#                 target_file.write(entry + "\n")
-#                 translation_list.write(word + "\n")
-#
-#                 del line[max_ind]
-#
-#                 for l in line:
-#                     entry = build_paradigm(l, form_paradigm, suffix, form=word)
-#                     target_file.write(entry + "\n")
-#                 count += 1
-#                 if count%10 == 0:
-#                     print("Обработано", count, "слов из группы", gr_count)
-#         gr_count += 1
+all_groups = [annu_group, chitarrista_group, pianeta_group, sucialismu_group, casa_group, pupulazzioni_group, parcu_group, ripubrica_group, citati_group, oricchia_group, culonia_group, tirritoriu_group]
+
+
+with open("nouns_paradigms_patr.txt", "w") as target_file, open("nouns_to_translate_patri.txt", 'w') as translation_list:
+    gr_count = 0
+    for group in all_groups:
+        count = 0
+        merged = merge_similar(group[3:])
+
+        main_paradium = group[0]
+        form_paradigm = group[1]
+        suffix = group[2]
+
+        for line in merged:
+
+            if len(line) == 1:
+                entry = build_paradigm(line[0], main_paradium, suffix)
+                # print()
+                target_file.write(entry + "\n")
+                translation_list.write(line[0] + "\n")
+
+            else:
+                frequencies = []
+                for word in line:
+                    frequencies.append(find_frequency(word))
+                maximum = max(frequencies)
+                max_ind = frequencies.index(maximum)
+                word = line[max_ind]
+
+                entry = build_paradigm(word, main_paradium, suffix)
+                target_file.write(entry + "\n")
+                translation_list.write(word + "\n")
+
+                del line[max_ind]
+
+                for l in line:
+                    entry = build_paradigm(l, form_paradigm, suffix, form=word)
+                    target_file.write(entry + "\n")
+                count += 1
+                if count%10 == 0:
+                    print("Обработано", count, "слов из группы", gr_count)
+        gr_count += 1

@@ -2,9 +2,9 @@ import requests
 from lxml import html
 
 count = 0
-with open("nouns_list_2.txt", "a") as nouns_file, open("nouns_translations.txt", "a") as translation_file:
+with open("adj_translations.txt", "a") as translation_file:
 
-    next_link = "https://scn.wiktionary.org/w/index.php?title=Catigur%C3%ACa:Sustantivi_siciliani&pagefrom=palpitazzioni&subcatfrom=A&filefrom=A#mw-pages"
+    next_link = "https://scn.wiktionary.org/wiki/Catigur%C3%ACa:Aggittivi_siciliani"
 
     while next_link:
 
@@ -27,8 +27,6 @@ with open("nouns_list_2.txt", "a") as nouns_file, open("nouns_translations.txt",
                 if second_section:
                     for part in second_section:
                         first_section.append(part)
-                for s in first_section:
-                    grammar.append(s)
                 word = sicilian[i].split("i/")[1].strip()
 
                 # if not word.endswith("ri") or word.endswith("si"):
@@ -45,8 +43,7 @@ with open("nouns_list_2.txt", "a") as nouns_file, open("nouns_translations.txt",
 
                 # print(word)
 
-                nouns_file.write(word + "\n")
-                translation_file.write(word + "\t" + ",".join(grammar) + "\n")
+                translation_file.write(word + "\t" + ",".join(first_section) + "\n")
                 count += 1
                 if count%50 == 0:
                     print(count, "Words extracted. Last word:", word)

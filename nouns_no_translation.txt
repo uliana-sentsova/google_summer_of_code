@@ -1,4 +1,0 @@
-      <e><p><l>barbotta<s n="n"/><s n="f"/></l><r>SPANISH<s n="n"/><s n="m"/></r></p></e> barbatella
-            <e><p><l>cardedda<s n="n"/><s n="f"/></l><r>SPANISH<s n="n"/><s n="m"/></r></p></e> cicerbita
-      <e><p><l>cazziata<s n="n"/><s n="f"/></l><r>SPANISH<s n="n"/><s n="m"/></r></p></e> rabbuffo
-      <e><p><l>faruncina<s n="n"/><s n="f"/></l><r>SPANISH<s n="n"/><s n="m"/></r></p></e> gonnellino

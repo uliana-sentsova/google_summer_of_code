@@ -1,0 +1,138 @@
+    <e lm="fari_comu_un_ettari"><i>fari_comu_un_ett</i><par n="parr/ari__vblex"/></e>
+    <e lm="abbrivisciri"><i>abbrivisc</i><par n="batt/iri__vblex"/></e>
+    <e lm="abbrivisciri" r="LR"><p><l>arbisc</l><r>abbrivisc</r></p><par n="batt/iri__vblex"/></e>
+    <e lm="abbrivisciri" r="LR"><p><l>abbrisc</l><r>abbrivisc</r></p><par n="batt/iri__vblex"/></e>
+    <e lm="accogghiri"><i>accoggh</i><par n="batt/iri__vblex"/></e>
+    <e lm="accogghiri" r="LR"><p><l>accogl</l><r>accoggh</r></p><par n="batt/iri__vblex"/></e>
+    <e lm="accurriri"><i>accurr</i><par n="batt/iri__vblex"/></e>
+    <e lm="accurriri" r="LR"><p><l>occurr</l><r>accurr</r></p><par n="batt/iri__vblex"/></e>
+    <e lm="addicidiri"><i>addicid</i><par n="batt/iri__vblex"/></e>
+    <e lm="addrummisciri"><i>addrummisc</i><par n="batt/iri__vblex"/></e>
+    <e lm="addrummisciri" r="LR"><p><l>addurmisc</l><r>addrummisc</r></p><par n="batt/iri__vblex"/></e>
+    <e lm="affenniri"><i>affenn</i><par n="batt/iri__vblex"/></e>
+    <e lm="affenniri" r="LR"><p><l>uffenn</l><r>affenn</r></p><par n="batt/iri__vblex"/></e>
+    <e lm="annivisciri"><i>annivisc</i><par n="batt/iri__vblex"/></e>
+    <e lm="annivisciri" r="LR"><p><l>arrivisc</l><r>annivisc</r></p><par n="batt/iri__vblex"/></e>
+    <e lm="annivisciri" r="LR"><p><l>allivisc</l><r>annivisc</r></p><par n="batt/iri__vblex"/></e>
+    <e lm="arridduciri"><i>arridduc</i><par n="batt/iri__vblex"/></e>
+    <e lm="arridduciri" r="LR"><p><l>arriduc</l><r>arridduc</r></p><par n="batt/iri__vblex"/></e>
+    <e lm="arripetiri"><i>arripet</i><par n="batt/iri__vblex"/></e>
+    <e lm="arripetiri" r="LR"><p><l>arrupet</l><r>arripet</r></p><par n="batt/iri__vblex"/></e>
+    <e lm="arrisediri"><i>arrised</i><par n="batt/iri__vblex"/></e>
+    <e lm="arriveniri"><i>arriven</i><par n="batt/iri__vblex"/></e>
+    <e lm="arrivugghiri"><i>arrivuggh</i><par n="batt/iri__vblex"/></e>
+    <e lm="arrumpiri"><i>arrump</i><par n="batt/iri__vblex"/></e>
+    <e lm="ascediri"><i>asced</i><par n="batt/iri__vblex"/></e>
+    <e lm="auccidiri"><i>auccid</i><par n="batt/iri__vblex"/></e>
+    <e lm="auccidiri" r="LR"><p><l>uccid</l><r>auccid</r></p><par n="batt/iri__vblex"/></e>
+    <e lm="cariri"><i>car</i><par n="batt/iri__vblex"/></e>
+    <e lm="catacogghiri"><i>catacoggh</i><par n="batt/iri__vblex"/></e>
+    <e lm="chianciri"><i>chianc</i><par n="batt/iri__vblex"/></e>
+    <e lm="chianciri" r="LR"><p><l>cianc</l><r>chianc</r></p><par n="batt/iri__vblex"/></e>
+    <e lm="chianciri" r="LR"><p><l>chiang</l><r>chianc</r></p><par n="batt/iri__vblex"/></e>
+    <e lm="chiuiri"><i>chiu</i><par n="batt/iri__vblex"/></e>
+    <e lm="chiuiri" r="LR"><p><l>chiud</l><r>chiu</r></p><par n="batt/iri__vblex"/></e>
+    <e lm="chiuiri" r="LR"><p><l>chiur</l><r>chiu</r></p><par n="batt/iri__vblex"/></e>
+    <e lm="chiuiri" r="LR"><p><l>juj</l><r>chiu</r></p><par n="batt/iri__vblex"/></e>
+    <e lm="chiuiri" r="LR"><p><l>chiuj</l><r>chiu</r></p><par n="batt/iri__vblex"/></e>
+    <e lm="chiuiri" r="LR"><p><l>iu</l><r>chiu</r></p><par n="batt/iri__vblex"/></e>
+    <e lm="cioviri"><i>ciov</i><par n="batt/iri__vblex"/></e>
+    <e lm="cociri"><i>coc</i><par n="batt/iri__vblex"/></e>
+    <e lm="cogliri"><i>cogl</i><par n="batt/iri__vblex"/></e>
+    <e lm="coliri"><i>col</i><par n="batt/iri__vblex"/></e>
+    <e lm="coniunciri"><i>coniunc</i><par n="batt/iri__vblex"/></e>
+    <e lm="coniunciri" r="LR"><p><l>conjung</l><r>coniunc</r></p><par n="batt/iri__vblex"/></e>
+    <e lm="coniunciri" r="LR"><p><l>cognung</l><r>coniunc</r></p><par n="batt/iri__vblex"/></e>
+    <e lm="coniunciri" r="LR"><p><l>cuniung</l><r>coniunc</r></p><par n="batt/iri__vblex"/></e>
+    <e lm="coniunciri" r="LR"><p><l>cugnunc</l><r>coniunc</r></p><par n="batt/iri__vblex"/></e>
+    <e lm="coniunciri" r="LR"><p><l>cuniunc</l><r>coniunc</r></p><par n="batt/iri__vblex"/></e>
+    <e lm="coniunciri" r="LR"><p><l>cunjung</l><r>coniunc</r></p><par n="batt/iri__vblex"/></e>
+    <e lm="coniunciri" r="LR"><p><l>coniung</l><r>coniunc</r></p><par n="batt/iri__vblex"/></e>
+    <e lm="coniunciri" r="LR"><p><l>cunjunc</l><r>coniunc</r></p><par n="batt/iri__vblex"/></e>
+    <e lm="coniunciri" r="LR"><p><l>cugnung</l><r>coniunc</r></p><par n="batt/iri__vblex"/></e>
+    <e lm="coniunciri" r="LR"><p><l>cognunc</l><r>coniunc</r></p><par n="batt/iri__vblex"/></e>
+    <e lm="coniunciri" r="LR"><p><l>conjunc</l><r>coniunc</r></p><par n="batt/iri__vblex"/></e>
+    <e lm="cunchiri"><i>cunch</i><par n="batt/iri__vblex"/></e>
+    <e lm="cunchiudiri"><i>cunchiud</i><par n="batt/iri__vblex"/></e>
+    <e lm="cunnettiri"><i>cunnett</i><par n="batt/iri__vblex"/></e>
+    <e lm="cunnuciri"><i>cunnuc</i><par n="batt/iri__vblex"/></e>
+    <e lm="cunusciri"><i>cunusc</i><par n="batt/iri__vblex"/></e>
+    <e lm="cunvinciri"><i>cunvinc</i><par n="batt/iri__vblex"/></e>
+    <e lm="cunvinciri" r="LR"><p><l>cumminc</l><r>cunvinc</r></p><par n="batt/iri__vblex"/></e>
+    <e lm="dicitiri"><i>dicit</i><par n="batt/iri__vblex"/></e>
+    <e lm="diduciri"><i>diduc</i><par n="batt/iri__vblex"/></e>
+    <e lm="difenniri"><i>difenn</i><par n="batt/iri__vblex"/></e>
+    <e lm="dirigiri"><i>dirig</i><par n="batt/iri__vblex"/></e>
+    <e lm="discadiri"><i>discad</i><par n="batt/iri__vblex"/></e>
+    <e lm="discurriri"><i>discurr</i><par n="batt/iri__vblex"/></e>
+    <e lm="disponiri"><i>dispon</i><par n="batt/iri__vblex"/></e>
+    <e lm="distruggiri"><i>distrugg</i><par n="batt/iri__vblex"/></e>
+    <e lm="distruggiri" r="LR"><p><l>distrud</l><r>distrugg</r></p><par n="batt/iri__vblex"/></e>
+    <e lm="divertiri"><i>divert</i><par n="batt/iri__vblex"/></e>
+    <e lm="dormiri"><i>dorm</i><par n="batt/iri__vblex"/></e>
+    <e lm="eliggiri"><i>eligg</i><par n="batt/iri__vblex"/></e>
+    <e lm="esciri"><i>esc</i><par n="batt/iri__vblex"/></e>
+    <e lm="esciri" r="LR"><p><l>niesc</l><r>esc</r></p><par n="batt/iri__vblex"/></e>
+    <e lm="esequiri"><i>esequ</i><par n="batt/iri__vblex"/></e>
+    <e lm="esistiri"><i>esist</i><par n="batt/iri__vblex"/></e>
+    <e lm="faciri"><i>fac</i><par n="batt/iri__vblex"/></e>
+    <e lm="fetiri"><i>fet</i><par n="batt/iri__vblex"/></e>
+    <e lm="inciri"><i>inc</i><par n="batt/iri__vblex"/></e>
+    <e lm="irasciri"><i>irasc</i><par n="batt/iri__vblex"/></e>
+    <e lm="junciri"><i>junc</i><par n="batt/iri__vblex"/></e>
+    <e lm="junciri" r="LR"><p><l>iunc</l><r>junc</r></p><par n="batt/iri__vblex"/></e>
+    <e lm="essiri"><i>ess</i><par n="batt/iri__vblex"/></e>
+    <e lm="essiri" r="LR"><p><l>jess</l><r>ess</r></p><par n="batt/iri__vblex"/></e>
+    <e lm="essiri" r="LR"><p><l>iess</l><r>ess</r></p><par n="batt/iri__vblex"/></e>
+    <e lm="luciri"><i>luc</i><par n="batt/iri__vblex"/></e>
+    <e lm="mmattiri"><i>mmatt</i><par n="batt/iri__vblex"/></e>
+    <e lm="mmessiri"><i>mmess</i><par n="batt/iri__vblex"/></e>
+    <e lm="moviri"><i>mov</i><par n="batt/iri__vblex"/></e>
+    <e lm="mpenniri"><i>mpenn</i><par n="batt/iri__vblex"/></e>
+    <e lm="mpinciri"><i>mpinc</i><par n="batt/iri__vblex"/></e>
+    <e lm="munciri"><i>munc</i><par n="batt/iri__vblex"/></e>
+    <e lm="nasciri"><i>nasc</i><par n="batt/iri__vblex"/></e>
+    <e lm="nghiuttiri"><i>nghiutt</i><par n="batt/iri__vblex"/></e>
+    <e lm="nghiuttiri" r="LR"><p><l>agliutt</l><r>nghiutt</r></p><par n="batt/iri__vblex"/></e>
+    <e lm="nsistiri"><i>nsist</i><par n="batt/iri__vblex"/></e>
+    <e lm="nsistiri" r="LR"><p><l>nzist</l><r>nsist</r></p><par n="batt/iri__vblex"/></e>
+    <e lm="ntrasiri"><i>ntras</i><par n="batt/iri__vblex"/></e>
+    <e lm="peddiri"><i>pedd</i><par n="batt/iri__vblex"/></e>
+    <e lm="pranciri"><i>pranc</i><par n="batt/iri__vblex"/></e>
+    <e lm="produciri"><i>produc</i><par n="batt/iri__vblex"/></e>
+    <e lm="profuttiri"><i>profutt</i><par n="batt/iri__vblex"/></e>
+    <e lm="prumoviri"><i>prumov</i><par n="batt/iri__vblex"/></e>
+    <e lm="rapiri"><i>rap</i><par n="batt/iri__vblex"/></e>
+    <e lm="rapiri" r="LR"><p><l>japr</l><r>rap</r></p><par n="batt/iri__vblex"/></e>
+    <e lm="rapiri" r="LR"><p><l>iapr</l><r>rap</r></p><par n="batt/iri__vblex"/></e>
+    <e lm="reggiri"><i>regg</i><par n="batt/iri__vblex"/></e>
+    <e lm="ricanusciri"><i>ricanusc</i><par n="batt/iri__vblex"/></e>
+    <e lm="risistiri"><i>risist</i><par n="batt/iri__vblex"/></e>
+    <e lm="rispunniri"><i>rispunn</i><par n="batt/iri__vblex"/></e>
+    <e lm="rumpiri"><i>rump</i><par n="batt/iri__vblex"/></e>
+    <e lm="sbidiri"><i>sbid</i><par n="batt/iri__vblex"/></e>
+    <e lm="sbidiri" r="LR"><p><l>svid</l><r>sbid</r></p><par n="batt/iri__vblex"/></e>
+    <e lm="scegghiri"><i>sceggh</i><par n="batt/iri__vblex"/></e>
+    <e lm="scegghiri" r="LR"><p><l>scegl</l><r>sceggh</r></p><par n="batt/iri__vblex"/></e>
+    <e lm="scinniri"><i>scinn</i><par n="batt/iri__vblex"/></e>
+    <e lm="scogghiri"><i>scoggh</i><par n="batt/iri__vblex"/></e>
+    <e lm="sientiri"><i>sient</i><par n="batt/iri__vblex"/></e>
+    <e lm="sierviri"><i>sierv</i><par n="batt/iri__vblex"/></e>
+    <e lm="spienniri"><i>spienn</i><par n="batt/iri__vblex"/></e>
+    <e lm="straluciri"><i>straluc</i><par n="batt/iri__vblex"/></e>
+    <e lm="strasentiri"><i>strasent</i><par n="batt/iri__vblex"/></e>
+    <e lm="succeriri"><i>succer</i><par n="batt/iri__vblex"/></e>
+    <e lm="succeriri" r="LR"><p><l>succier</l><r>succer</r></p><par n="batt/iri__vblex"/></e>
+    <e lm="succeriri" r="LR"><p><l>succied</l><r>succer</r></p><par n="batt/iri__vblex"/></e>
+    <e lm="suffrijiri"><i>suffrij</i><par n="batt/iri__vblex"/></e>
+    <e lm="supponiri"><i>suppon</i><par n="batt/iri__vblex"/></e>
+    <e lm="surridiri"><i>surrid</i><par n="batt/iri__vblex"/></e>
+    <e lm="susiri"><i>sus</i><par n="batt/iri__vblex"/></e>
+    <e lm="taciri"><i>tac</i><par n="batt/iri__vblex"/></e>
+    <e lm="tingiri"><i>ting</i><par n="batt/iri__vblex"/></e>
+    <e lm="torciri"><i>torc</i><par n="batt/iri__vblex"/></e>
+    <e lm="traruciri"><i>traruc</i><par n="batt/iri__vblex"/></e>
+    <e lm="tunniri"><i>tunn</i><par n="batt/iri__vblex"/></e>
+    <e lm="umettiri"><i>umett</i><par n="batt/iri__vblex"/></e>
+    <e lm="umettiri" r="LR"><p><l>omett</l><r>umett</r></p><par n="batt/iri__vblex"/></e>
+    <e lm="vieniri"><i>vien</i><par n="batt/iri__vblex"/></e>
